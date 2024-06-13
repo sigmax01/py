@@ -48,7 +48,6 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference 
   icon:
-    logo: logo
     annotation: material/star-four-points-circle
     # admonition:
     #   note: octicons/tag-16
