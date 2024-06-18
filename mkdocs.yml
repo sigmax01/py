@@ -136,6 +136,6 @@ nav:
   - 常用:
     - datetime: 常用/datetime.md
   - NumPy:
-    - 数组/矩阵: NumPy/矩阵.md
+    - 数据结构: NumPy/数据结构.md
   - Pandas:
     - 数据结构: Pandas/数据结构.md

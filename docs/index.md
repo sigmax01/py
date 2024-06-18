@@ -18,6 +18,6 @@
 - [ ] 常用
     - [x] [datetime](/常用/datetime)
 - [ ] NumPy
-    - [ ] [数组/矩阵](/NumPy/矩阵)
+    - [ ] [数据结构](/NumPy/数据结构)
 - [ ] Pandas
     - [ ] [数据结构](/Pandas/数据结构)
