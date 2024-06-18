@@ -17,7 +17,7 @@
     - [x] [错误/调试/测试](/基础/调试)
 - [ ] 常用
     - [x] [datetime](/常用/datetime)
-    - [ ] [collections](/常用/collections)
+    - [x] [collections](/常用/collections)
     - [x] [argparse](/常用/argparse)
 - [ ] NumPy
     - [ ] [数据结构](/NumPy/数据结构)
