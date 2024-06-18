@@ -221,4 +221,68 @@ comments: true
     2024-06-17 00:10:29.281663
     ```
 
+## 时区
+
+### 自定义时区信息
+
+`datetime`对象有一个时区的属性`tzinfo`, 默认为`None`, 这类对象被称为Naive `datetime`对象, 表示不包含时区信息. 我们可以通过`replace(tzinfo=UTC)`将其转化为Aware `datetime`对象, 包含时区信息为UTC时区.
+
+此外, 我们也可以用`datetime`模块下的`timezone`类创建一个时区对象, 将该对象作为参数传递给`replace(tzinfo=[instance])`. 那么产生的`datetime`对象包含的时区信息为我们的自定义时区.
+
+???+ example "例子"
+
+    定义: 
+
+    ```py
+    from datetime import datetime, timedelta, timezone
+
+    tz_utc_8_8 = timezone(timedelta(hours=8, minutes=8))
+    now = datetime.now()
+    print(now)
+    dt = now.replace(tzinfo=tz_utc_8_8)
+    print(dt)
+    ```
+
+    执行: 
+
+    ```
+    $ python main.py
+    2024-06-18 12:34:23.874828
+    2024-06-18 12:34:23.874828+08:08
+    ```
+
+    ???+ warning "注意"
+
+        自定义时区只是附加了时区信息, 并不会改变当前`datetime`显示的时间.
+
+### 时区转化
+
+可以利用`datetime`对象的`astimezone()`方法切换时区. 这么做的而前提是这个`datetime`对象是一个Aware `datetime`对象, 即其时区属性`tzinfo`需要被定义. 
+
+???+ example "例子"
+
+    定义:
+
+    ```py
+    from datetime import datetime, timedelta, timezone
+
+    tz_utc_8 = timezone(timedelta(hours=8))
+    now = datetime.now()
+    print(now)
+    dt = now.replace(tzinfo=tz_utc_8)
+    print(dt)
+    tz_utc_9 = timezone(timedelta(hours=9))
+    dt_9 = dt.astimezone(tz_utc_9)
+    print(dt_9)
+    ```
+
+    执行: 
+
+    ```
+    $ python main.py
+    2024-06-18 12:44:19.574895
+    2024-06-18 12:44:19.574895+08:00
+    2024-06-18 13:44:19.574895+09:00
+    ```
+
 [^1]: Datetime. (n.d.). Retrieved June 18, 2024, from https://www.liaoxuefeng.com/wiki/1016959663602400/1017648783851616

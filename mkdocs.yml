@@ -135,3 +135,7 @@ nav:
     - 错误/调试/测试: 基础/调试.md
   - 常用:
     - datetime: 常用/datetime.md
+  - NumPy:
+    - 数组/矩阵: NumPy/矩阵.md
+  - Pandas:
+    - 数据结构: Pandas/数据结构.md
