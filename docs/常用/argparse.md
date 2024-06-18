@@ -101,3 +101,5 @@ comments: true
 ???+ note "笔记"
 
     `[parser_instance].parse_args()`用于分析接收到的参数, 如果参数有问题, 会打印错误信息, 结束进程; 如果参数是`-r`, 会打印帮助信息, 结束进程. 只有当参数全部有效时, 才会返回一个`NameSpace`对象, 所有的参数都以属性的方式存储在这个对象中.
+
+[^1]: Argparse. (n.d.). Retrieved June 18, 2024, from https://www.liaoxuefeng.com/wiki/1016959663602400/1529653965619235
