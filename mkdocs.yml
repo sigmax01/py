@@ -135,6 +135,8 @@ nav:
     - 错误/调试/测试: 基础/调试.md
   - 常用:
     - datetime: 常用/datetime.md
+    - collections: 常用/collections.md
+    - argparse: 常用/argparse.md
   - NumPy:
     - 数据结构: NumPy/数据结构.md
   - Pandas:
