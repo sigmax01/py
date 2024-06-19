@@ -19,7 +19,7 @@
     - [x] [datetime](/常用/datetime)
     - [x] [collections](/常用/collections)
     - [x] [argparse](/常用/argparse)
-    - [ ] [struct](/常用/struct)
+    - [x] [struct](/常用/struct)
     - [x] [base64](/常用/base64)
     - [x] [hashlib](/常用/hashlib)
     - [x] [hmac](/常用/hmac)
