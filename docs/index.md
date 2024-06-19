@@ -19,11 +19,13 @@
     - [x] [datetime](/常用/datetime)
     - [x] [collections](/常用/collections)
     - [x] [argparse](/常用/argparse)
+    - [ ] [struct](/常用/struct)
     - [x] [base64](/常用/base64)
     - [x] [hashlib](/常用/hashlib)
     - [x] [hmac](/常用/hmac)
     - [x] [itertools](/常用/itertools)
     - [x] [contextlib](/常用/contextlib)
+    - [ ] [requests](/常用/requests)
 - [ ] NumPy
     - [ ] [数据结构](/NumPy/数据结构)
 - [ ] Pandas

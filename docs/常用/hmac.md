@@ -10,7 +10,7 @@ comments: true
 
 ???+ warning "注意"
 
-    `hmac`模块要求用户必须显式传入字节流, 不能传入字符串因为其内部不会对字符串自动转化. 这样做的优点是避免自动转化带来的潜在问题, 例如不同的转化方式可能导致不同的字节, 从而影响摘要值; [`hashlib`模块](/常用/hashlib)内部会对字符串进行自动转化.
+    `hmac`模块要求必须传入二进制数据, 因此如果传入的是普通字符串必须将传入的字符串经过UTF-8编码之后转为二进制数据.
 
 ???+ example "例子"
 
@@ -19,7 +19,8 @@ comments: true
     ```py
     import hmac
 
-    message = b"hello world"
+    string = "hello world"
+    message = string.encode("utf-8")
     salt = b"what are you saying"
     h = hmac.new(salt, message, digestmod='MD5')
     print(h.hexdigest())
@@ -42,7 +43,8 @@ comments: true
     import os
     import hmac
 
-    message = b"hello world"
+    string = "hello world"
+    message = string.encode("utf-8")
     salt = os.urandom(16) # 生成一个16字节的随机盐
     h = hmac.new(salt, message, digestmod='MD5')
     print(h.hexdigest())
