@@ -19,6 +19,7 @@
     - [x] [datetime](/常用/datetime)
     - [x] [collections](/常用/collections)
     - [x] [argparse](/常用/argparse)
+    - [x] [base64](/常用/base64)
 - [ ] NumPy
     - [ ] [数据结构](/NumPy/数据结构)
 - [ ] Pandas

@@ -137,6 +137,7 @@ nav:
     - datetime: 常用/datetime.md
     - collections: 常用/collections.md
     - argparse: 常用/argparse.md
+    - base64: 常用/base64.md
   - NumPy:
     - 数据结构: NumPy/数据结构.md
   - Pandas:
