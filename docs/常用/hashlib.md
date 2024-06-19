@@ -19,61 +19,7 @@ comments: true
 ???+ warning "注意"
 
     - 两个不同的数据通过某个摘要算法得到相同的摘要是有可能的, 只不过这种情况非常非常少见.
-    - 摘要函数只能处理二进制数据, 因此如果传入的是普通字符串必须将传入的字符串经过UTF-8编码之后转为二进制数据.
-
-        ???+ example "例子"
-
-            ```py
-            # 字符串
-            string_data = "hello 你好"
-
-            # UTF-8编码
-            utf8_encoded = string_data.encode('utf-8')
-            print(utf8_encoded)  # 输出：b'hello \xe4\xbd\xa0\xe5\xa5\xbd'
-
-            # UTF-8解码
-            decoded_string = utf8_encoded.decode('utf-8')
-            print(decoded_string)  # 输出：hello 你好
-            ```
-
-???+ danger "特别注意: UTF-8和ASCII编码"
-
-    - UTF-8是一种编码的手段, 目前大部分的文件的二进制数据都是由UTF-8编码得到的, 我们在打开编辑器的时候, 可以发现选择UTF-8, 这是选择用UTF-8解码, 文件的二进制数据经过UTF-8解码之后才能被操作系统正确显示. 又例如, 一个网站的开发人员用UTF-8编码生成二进制文件放在服务器上, 我们访问网页从服务器传过来的其实是二进制流, 这些二进制流经过浏览器的UTF-8解码器解码后才能呈现在网页上.
-    - `b'abc'`和`'abc'`是不一样的, 前面的那个是二进制数据, 后面的那个是普通的字符串, 它是由UTF-8解码得到的(我们在IDE中配置的就是以UTF-8解码, 所以所有的能看到的文字都是由UTF-8解码得到的), `abc`必须经过UTF-8编码之后才能得到`b'abc'`.
-
-    ???+ example "例子"
-
-        === "例子1"
-
-            定义:
-
-            ```py
-            string_data = b"hello 你好"
-            ```
-
-            直接报错
-
-            ```
-            string_data = "hello 你好"
-            print(string_data.encode("utf-8"))
-            ```
-
-            成功
-
-        === "例子2"
-
-            ```py
-            # 字符串
-            string_data = "abc"
-
-            # 将字符串编码为字节对象（使用默认的UTF-8编码）
-            byte_data = string_data.encode('ascii')
-            print(f"Byte data: {byte_data}")  # 输出：b'abc'
-
-            # 从字节对象解码回字符串
-            decoded_string = byte_data.decode('ascii')
-            print(f"Decoded string: {decoded_string}")  # 输出：abc
-            ```
+    - 摘要函数只能处理二进制数据, 因此如果传入的是普通字符串必须将传入的字符串经过[UTF-8编码](/基础/编码/#UTF-8编码和解码)或者其他编码之后转为比特字符串.
 
 ## 摘要算法
 
