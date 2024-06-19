@@ -21,6 +21,7 @@
     - [x] [argparse](/常用/argparse)
     - [x] [base64](/常用/base64)
     - [x] [hashlib](/常用/hashlib)
+    - [x] [hmac](/常用/hmac)
 - [ ] NumPy
     - [ ] [数据结构](/NumPy/数据结构)
 - [ ] Pandas

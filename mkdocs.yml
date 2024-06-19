@@ -139,6 +139,7 @@ nav:
     - argparse: 常用/argparse.md
     - base64: 常用/base64.md
     - hashlib: 常用/hashlib.md
+    - hmac: 常用/hmac.md
   - NumPy:
     - 数据结构: NumPy/数据结构.md
   - Pandas:
