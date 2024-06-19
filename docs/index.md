@@ -25,7 +25,7 @@
     - [x] [hmac](/常用/hmac)
     - [x] [itertools](/常用/itertools)
     - [x] [contextlib](/常用/contextlib)
-    - [ ] [requests](/常用/requests)
+    - [x] [requests](/常用/requests)
 - [ ] NumPy
     - [ ] [数据结构](/NumPy/数据结构)
 - [ ] Pandas
