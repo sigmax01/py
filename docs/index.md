@@ -27,7 +27,8 @@
     - [x] [contextlib](/常用/contextlib)
     - [x] [requests](/常用/requests)
 - [ ] NumPy
-    - [ ] [数据结构](/NumPy/数据结构)
+    - [ ] [数据类型](/NumPy/数据类型)
+    - [ ] [nd数组构建](/NumPy/nd数组构建)
 - [ ] Pandas
     - [ ] [数据结构](/Pandas/数据结构)
 
