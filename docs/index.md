@@ -16,7 +16,7 @@
     - [x] [数据库](/基础/数据库)
     - [x] [错误/调试/测试](/基础/调试)
     - [x] [编码](/基础/编码)
-- [ ] 常用
+- [x] 常用
     - [x] [datetime](/常用/datetime)
     - [x] [collections](/常用/collections)
     - [x] [argparse](/常用/argparse)
@@ -27,8 +27,9 @@
     - [x] [contextlib](/常用/contextlib)
     - [x] [requests](/常用/requests)
 - [ ] NumPy
-    - [ ] [数据类型](/NumPy/数据类型)
-    - [ ] [数组构建](/NumPy/数组构建)
+    - [x] [数据类型](/NumPy/数据类型)
+    - [x] [数组构建](/NumPy/数组构建)
+    - [ ] [视图/副本](/NumPy/视图副本)
 - [ ] Pandas
     - [ ] [数据结构](/Pandas/数据结构)
 
