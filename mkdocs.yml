@@ -148,5 +148,6 @@ nav:
     - 数据类型: NumPy/数据类型.md
     - 数组构建: NumPy/数组构建.md
     - 视图/副本: NumPy/视图副本.md
+    - 数组索引: NumPy/数组索引.md
   - Pandas:
     - 数据结构: Pandas/数据结构.md
