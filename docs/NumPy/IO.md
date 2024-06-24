@@ -38,7 +38,7 @@ np.save("[file]", [arr], allow_pickle=[True/False], fix_imports=[True/False])
 
     执行之后产生了一个二进制文件`outfile.npy`.
 
-#### 参数说明
+参数说明:
 
 - `[file]`: 要保存的文件, 扩展名为`.npy`
 
@@ -93,7 +93,7 @@ np.load("[file]")
     [1 2 3 4 5]
     ```
 
-#### 参数说明
+参数说明:
 
 - `[file]`: 要读取的文件, 可以是`.npy`或者`.npz`
 
@@ -134,7 +134,7 @@ np.savez("[file]", [*args], [**kwds])
     [0. 0.09983342 0.19866933 0.29552021 0.38941834 0.47942554 0.56464247 0.64421769 0.71735609 0.78332691]
     ```
 
-#### 参数说明
+参数说明:
 
 - `[file]`: 要保存的文件, 扩展名为`.npz`
 
@@ -176,8 +176,7 @@ np.savetxt("[file]", [arr], fmt="[format]", delimiter="[delimiter]")
     4,5,6
     ```
 
-#### 参数说明
-
+参数说明:
 
 - `[file]`: 要保存的文件
 - `[arr]`: 要保存的数组
@@ -209,10 +208,12 @@ np.loadtxt("[file]", delimiter="[delimiter]")
      [4. 5. 6.]]
     ```
 
-#### 参数说明
+参数说明:
 
 - `[file]`: 要读取的文件
 - `delimiter="[delimiter]"`: 指定数组中每个元素之间的分隔符
+
+### `np.genfromtxt()`函数
 
 [^1]: 使用 genfromtxt 导入数据—NumPy v1.26 手册—NumPy 中文. (n.d.). Retrieved June 24, 2024, from https://numpy.com.cn/doc/stable/user/basics.io.genfromtxt.html
 [^2]: NumPy IO | 菜鸟教程. (n.d.). Retrieved June 24, 2024, from https://www.runoob.com/numpy/numpy-io.html
