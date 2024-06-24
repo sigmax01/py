@@ -238,5 +238,39 @@ np.loadtxt("[file]", delimiter="[delimiter]")
     
         默认情况下, `delimiter`默认值为`None`. 这意味着每一行按照空白进行拆分, 连续的空白将被视为单个空白.
 
+        ???+ example "例子"
+
+            ```
+            [1]: data = u"1 2 3\n4 5       6"
+            [2]: np.genfromtxt(StringIO(data), delimiter="")
+            array([[1., 2., 3.],
+                   [4., 5., 6.]])
+            ```
+
+            可以看到, 连续的空白按照单个空白处理, 所以没有报错. 
+
+            但是, 如果`delimiter`设置为单个空白, 会报错.
+
+            ```
+            [1]: data = u"1 2 3\n4 5       6"
+            [2]: np.genfromtxt(StringIO(data), delimiter=" ")
+            ---------------------------------------------------------------------------
+            ValueError                                Traceback (most recent call last)
+
+            Cell In[33], line 1
+            ----> 1 np.genfromtxt(StringIO(data), delimiter=" ")
+
+            File ~/miniconda3/envs/test/lib/python3.12/site-packages/numpy/lib/npyio.py:2312, in genfromtxt(fname, dtype, comments, delimiter, skip_header, skip_footer, converters, missing_values, filling_values, usecols, names, excludelist, deletechars, replace_space, autostrip, case_sensitive, defaultfmt, unpack, usemask, loose, invalid_raise, max_rows, encoding, ndmin, like)
+            2310 # Raise an exception ?
+            2311 if invalid_raise:
+            -> 2312     raise ValueError(errmsg)
+            2313 # Issue a warning ?
+            2314 else:
+            2315     warnings.warn(errmsg, ConversionWarning, stacklevel=2)
+
+            ValueError: Some errors were detected !
+                Line #2 (got 9 columns instead of 3)
+            ```
+
 [^1]: 使用 genfromtxt 导入数据—NumPy v1.26 手册—NumPy 中文. (n.d.). Retrieved June 24, 2024, from https://numpy.com.cn/doc/stable/user/basics.io.genfromtxt.html
 [^2]: NumPy IO | 菜鸟教程. (n.d.). Retrieved June 24, 2024, from https://www.runoob.com/numpy/numpy-io.html
