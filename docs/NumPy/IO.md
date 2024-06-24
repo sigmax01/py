@@ -6,7 +6,8 @@ comments: true
 
 ???+ info "信息"
 
-    默认省略导入`import numpy as np`.
+    - 默认省略导入`import numpy as np`.
+    - 默认省略导入`from io import StringIO`: [`np.genfromtxt()`函数](#genfromtxt函数)
 
 根据文件的不同, 可以将用于IO的文件分为二进制文件和文本文件, 关于它们的区别, 见[这里](/基础/编码#文本文件和二进制文件).
 
@@ -183,7 +184,7 @@ np.savetxt("[file]", [arr], fmt="[format]", delimiter="[delimiter]")
 - `fmt="[format]"`: 数组的每个元素的存储格式
 - `delimiter="[delimiter]"`: 指定数组中每个元素之间的分隔符
 
-### `np.loadtxt()`函数
+### `np.loadtxt()`函数 {#loadtxt函数}
 
 `np.loadtxt()`函数用于读取文本文件中的数组数据.
 
@@ -213,7 +214,29 @@ np.loadtxt("[file]", delimiter="[delimiter]")
 - `[file]`: 要读取的文件
 - `delimiter="[delimiter]"`: 指定数组中每个元素之间的分隔符
 
-### `np.genfromtxt()`函数
+### `np.genfromtxt()`函数 {#genfromtxt函数}
+
+`np.genfromtxt()`函数用于从表格数据创建数组. 简而言之, `genfromtxt`运行两个主循环. 第一个循环将文件的每一行转换为字符串序列, 第二个循环将每个字符串转换为适当的熟悉类型. 这种机制虽然比单循环慢, 但灵活性更高. 特别是`np.genfromtxt()`能够考虑缺失数据, 而其他更快, 更简单的函数如`np.loadtxt()`不能.
+
+#### 定义输入
+
+`np.genfromtxt()`唯一的强制参数是数据源. 它可以是字符串, 字符串列表, 返回字符串的生成器或具有`read`方法的打开的文件类对象, 例如文件或`io.StringIO`对象. 
+
+- 单个字符串: 假定它为本地文件的文件名
+- 字符串列表或返回字符串的生成器: 每个字符串都将视为文件中的一行
+- 远程文件URL: 文件将自动下载到当前目录并打开
+
+#### 参数信息
+
+##### 将行拆分为列
+
+- `delimiter`参数
+
+    一旦定义了文件并将其打开进行读取, `np.genfromtxt()`就会将每行拆分为一系列字符串, 空行或者注释行将被跳过. `delimiter`关键字参数定义如何进行拆分. 
+    
+    ???+ tip "Tip"
+    
+        默认情况下, `delimiter`默认值为`None`. 这意味着每一行按照空白进行拆分, 连续的空白将被视为单个空白.
 
 [^1]: 使用 genfromtxt 导入数据—NumPy v1.26 手册—NumPy 中文. (n.d.). Retrieved June 24, 2024, from https://numpy.com.cn/doc/stable/user/basics.io.genfromtxt.html
 [^2]: NumPy IO | 菜鸟教程. (n.d.). Retrieved June 24, 2024, from https://www.runoob.com/numpy/numpy-io.html
