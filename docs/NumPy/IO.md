@@ -24,7 +24,7 @@ comments: true
 `np.save()`函数将数组保存到以`.npy`为扩展名的文件中.
 
 ```
-np.save([file], [arr], allow_pickle=[True/False], fix_imports=[True/False])
+np.save("[file]", [arr], allow_pickle=[True/False], fix_imports=[True/False])
 ```
 
 ???+ example "例子"
@@ -73,6 +73,10 @@ np.save([file], [arr], allow_pickle=[True/False], fix_imports=[True/False])
 
 `np.load()`函数用于从以`.npy`或`.npz`为扩展名的文件中读取数组.
 
+```
+np.load("[file]")
+```
+
 ???+ example "例子"
 
     定义: 
@@ -89,19 +93,23 @@ np.save([file], [arr], allow_pickle=[True/False], fix_imports=[True/False])
     [1 2 3 4 5]
     ```
 
+#### 参数说明
+
+- `[file]`: 要读取的文件, 可以是`.npy`或者`.npz`
+
 ### `np.savez()`函数
 
 `np.savez()`函数将多个数组保存到以`.npz`为扩展名的文件中.
 
 ```
-np.savez([file], [*args], [**kwds])
+np.savez("[file]", [*args], [**kwds])
 ```
 
 ???+ example "例子"
 
     定义:
 
-    ```
+    ```py
     a = np.array([[1, 2, 3], [4, 5, 6]])
     b = np.arange(0, 1.0, 0.1)
     c = np.sin(b)
@@ -139,6 +147,72 @@ np.savez([file], [*args], [**kwds])
 - `[**kwds]`: 要保存的数组, 使用[关键字参数](/基础/函数/#关键字参数)传入
 
 ## 文本文件
+
+在[数组构建](/NumPy/数组构建)章节中, 我们介绍了简单的读写csv文本文件的[方式](/NumPy/数组构建/#读取文本文件). 
+
+我们也可以自定义文本文件的结构, 如分隔符等.
+
+### `np.savetxt()`函数
+
+`np.savetxt()`函数以简单的文本文件形式存储数据. 
+
+```
+np.savetxt("[file]", [arr], fmt="[format]", delimiter="[delimiter]")
+```
+
+???+ example "例子"
+
+    定义:
+
+    ```py
+    a = np.array([[1, 2, 3], [4, 5, 6]])
+    np.savetxt("output.txt", a, fmt="%d", delimiter=",")
+    ```
+
+    `output.txt`文件内容:
+
+    ```
+    1,2,3
+    4,5,6
+    ```
+
+#### 参数说明
+
+
+- `[file]`: 要保存的文件
+- `[arr]`: 要保存的数组
+- `fmt="[format]"`: 数组的每个元素的存储格式
+- `delimiter="[delimiter]"`: 指定数组中每个元素之间的分隔符
+
+### `np.loadtxt()`函数
+
+`np.loadtxt()`函数用于读取文本文件中的数组数据.
+
+```
+np.loadtxt("[file]", delimiter="[delimiter]")
+```
+
+???+ example "例子"
+
+    定义:
+
+    ```py
+    x = np.loadtxt("output.txt", delimiter=",")
+    print(x)
+    ```
+
+    执行:
+
+    ```
+    $ python main.py
+    [[1. 2. 3.]
+     [4. 5. 6.]]
+    ```
+
+#### 参数说明
+
+- `[file]`: 要读取的文件
+- `delimiter="[delimiter]"`: 指定数组中每个元素之间的分隔符
 
 [^1]: 使用 genfromtxt 导入数据—NumPy v1.26 手册—NumPy 中文. (n.d.). Retrieved June 24, 2024, from https://numpy.com.cn/doc/stable/user/basics.io.genfromtxt.html
 [^2]: NumPy IO | 菜鸟教程. (n.d.). Retrieved June 24, 2024, from https://www.runoob.com/numpy/numpy-io.html
