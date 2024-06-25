@@ -8,6 +8,8 @@ comments: true
 
     - 默认省略导入`import numpy as np`.
     - 默认省略导入`from io import StringIO`: [`np.genfromtxt()`函数](#genfromtxt函数)
+    - 前置知识
+        - [结构化数组](/NumPy/结构化数组): [设置名称](#设置名称), [调整转换](#调整转换), [快捷函数](#快捷函数).
 
 根据文件的不同, 可以将用于IO的文件分为二进制文件和文本文件, 关于它们的区别, 见[这里](/基础/编码#文本文件和二进制文件).
 

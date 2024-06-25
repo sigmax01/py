@@ -32,8 +32,10 @@
     - [x] [数组构建](/NumPy/数组构建)
     - [x] [视图/副本](/NumPy/视图副本)
     - [x] [广播](/NumPy/广播)
-    - [ ] [IO](/NumPy/IO)
+    - [ ] [结构化数组](NumPy/结构化数组)
     - [ ] [数组索引](/NumPy/数组索引)
+    - [ ] [IO](/NumPy/IO)
+    - [ ] [API](/NumPy/API)
 - [ ] Pandas
     - [ ] [数据结构](/Pandas/数据结构)
 

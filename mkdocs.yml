@@ -150,7 +150,9 @@ nav:
     - 数组构建: NumPy/数组构建.md
     - 视图/副本: NumPy/视图副本.md
     - 广播: NumPy/广播.md
-    - IO: NumPy/IO.md
+    - 结构化数组: NumPy/结构化数组.md
     - 数组索引: NumPy/数组索引.md
+    - IO: NumPy/IO.md
+    - API: NumPy/API.md
   - Pandas:
     - 数据结构: Pandas/数据结构.md
