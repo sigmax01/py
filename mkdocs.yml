@@ -155,4 +155,5 @@ nav:
     - IO: NumPy/IO.md
     - API: NumPy/API.md
   - Pandas:
+    - 预备知识: Pandas/预备知识.md
     - 数据结构: Pandas/数据结构.md
