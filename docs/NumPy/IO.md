@@ -235,7 +235,7 @@ np.loadtxt("[file]", delimiter="[delimiter]")
         定义:
 
         ```py
-        data = u"1, 2, 3\n4, 5, 6"
+        data = "1, 2, 3\n4, 5, 6"
         np.genfromtxt(StringIO(data), delimiter=",") # 正确调用方式, 先转为文件
         np.genfromtxt(data, delimiter=",") # 错误调用方式
         ```
@@ -257,41 +257,172 @@ np.loadtxt("[file]", delimiter="[delimiter]")
     
     ???+ tip "Tip"
     
-        默认情况下, `delimiter`默认值为`None`. 这意味着每一行按照空白进行拆分, 连续的空白将被视为单个空白.
+        - 默认情况下, `delimiter`默认值为`None`. 这意味着每一行按照空白进行拆分, 连续的空白被视为单个空白.
 
-        ???+ example "例子"
+            ???+ example "例子"
 
-            ```
-            [1]: data = u"1 2 3\n4 5       6"
-            [2]: np.genfromtxt(StringIO(data), delimiter="")
-            array([[1., 2., 3.],
-                   [4., 5., 6.]])
-            ```
+                ```
+                [1]: data = u"1 2 3\n4 5       6"
+                [2]: np.genfromtxt(StringIO(data), delimiter="")
+                array([[1., 2., 3.],
+                       [4., 5., 6.]])
+                ```
 
-            可以看到, 连续的空白按照单个空白处理, 所以没有报错. 
+                可以看到, 连续的空白按照单个空白处理, 所以没有报错. 
 
-            但是, 如果`delimiter`设置为单个空白, 会报错.
+                但是, 如果`delimiter`设置为单个空白, 会报错.
 
-            ```
-            [1]: data = u"1 2 3\n4 5       6"
-            [2]: np.genfromtxt(StringIO(data), delimiter=" ")
-            ---------------------------------------------------------------------------
-            ValueError                                Traceback (most recent call last)
+                ```
+                [1]: data = u"1 2 3\n4 5       6"
+                [2]: np.genfromtxt(StringIO(data), delimiter=" ")
+                ---------------------------------------------------------------------------
+                ValueError                                Traceback (most recent call last)
 
-            Cell In[33], line 1
-            ----> 1 np.genfromtxt(StringIO(data), delimiter=" ")
+                Cell In[33], line 1
+                ----> 1 np.genfromtxt(StringIO(data), delimiter=" ")
 
-            File ~/miniconda3/envs/test/lib/python3.12/site-packages/numpy/lib/npyio.py:2312, in genfromtxt(fname, dtype, comments, delimiter, skip_header, skip_footer, converters, missing_values, filling_values, usecols, names, excludelist, deletechars, replace_space, autostrip, case_sensitive, defaultfmt, unpack, usemask, loose, invalid_raise, max_rows, encoding, ndmin, like)
-            2310 # Raise an exception ?
-            2311 if invalid_raise:
-            -> 2312     raise ValueError(errmsg)
-            2313 # Issue a warning ?
-            2314 else:
-            2315     warnings.warn(errmsg, ConversionWarning, stacklevel=2)
+                File ~/miniconda3/envs/test/lib/python3.12/site-packages/numpy/lib/npyio.py:2312, in genfromtxt(fname, dtype, comments, delimiter, skip_header, skip_footer, converters, missing_values, filling_values, usecols, names, excludelist, deletechars, replace_space, autostrip, case_sensitive, defaultfmt, unpack, usemask, loose, invalid_raise, max_rows, encoding, ndmin, like)
+                2310 # Raise an exception ?
+                2311 if invalid_raise:
+                -> 2312     raise ValueError(errmsg)
+                2313 # Issue a warning ?
+                2314 else:
+                2315     warnings.warn(errmsg, ConversionWarning, stacklevel=2)
 
-            ValueError: Some errors were detected !
-                Line #2 (got 9 columns instead of 3)
-            ```
+                ValueError: Some errors were detected !
+                    Line #2 (got 9 columns instead of 3)
+                ```
+        
+        - 当处理固定宽度(即每行的字符个数相同)时, 可以将:
+
+            - `delimiter`设置为一个整数, 表示每行搁多少个字符分割一次
+            
+                ???+ example "例子"
+                
+                    ```
+                    [1]: data = "  1  2  3\n  4  5  6\n890123  4"
+                    [2]: np.genfromtxt(StringIO(data), delimiter=3)
+                    array([[  1.,   2.,   3.],
+                           [  4.,   5.,   6.],
+                           [890., 123.,   4.]])
+                    ```
+                    
+                    每行搁3搁字符分割一次.
+
+            - `delimiter`设置为一个元祖, 表示每行分割的位置
+            
+                ???+ example "例子"
+                
+                    ```
+                    [1]: data = "123456789\n   4  7 9\n   4567 9"
+                    [2]: np.genfromtxt(StringIO(data), delimiter=(4, 3, 2))
+                    array([[1234.,  567.,   89.],
+                           [   4.,    7.,    9.],
+                           [   4.,  567.,    9.]])
+                    ```
+                    
+                    首先截取4搁字符, 再截取3个字符, 最后截取2搁字符.
+    
+- `autostrip`参数 
+
+    默认情况下, 当一行分解为一系列字符串的时候, 各个条目不会去掉前导或尾随的空格. 可以通过设置`autostrip=True`实现自动去空格.
+    
+    ???+ example "例子"
+    
+        ```
+        [1]: data = '1, abc , 2\n 3, xxx, 4'
+        [2]: np.genfromtxt(StringIO(data), delimiter=",", dtype="|U5") # 不会自动去掉空格
+        array([['1', ' abc ', ' 2'],
+               ['3', ' xxx', ' 4']], dtype='<U5')
+        [3]: np.genfromtxt(StringIO(data), delimiter=",", dtype="|U5", autostrip=True) # 会自动去掉空格
+        array([['1', 'abc', '2'],
+               ['3', 'xxx', '4']], dtype='<U5')
+        ```
+        
+- `comments`参数
+
+    可选参数用于定义一个标记注释开头的字符串. 默认情况下, 会假设为`#`. 注释标记可以出现在任何位置, 注释标记之后出现的任何字符串都会被忽略. 
+    
+    ???+ example "例子"
+    
+        ```
+        [1]: data = """
+        # Skip me!
+        # Skip me too!
+        1, 2
+        3, 4
+        5, 6 # This is the third line of the data
+        7, 8
+        # And the last line
+        9, 0
+        """
+        [2]: np.genfromtxt(StringIO(data), delimiter=",")
+        array([[1., 2.],
+               [3., 4.],
+               [5., 6.],
+               [7., 8.],
+               [9., 0.]])
+        [3]: np.genfromtxt(StringIO(data), delimiter=",", comments="&")
+        array([[1., 2.],
+               [3., 4.],
+               [5., 6.],
+               [7., 8.],
+               [9., 0.]])
+        ```
+        
+    ???+ tip "Tip"
+    
+        当`comments`被设置为`None`时, 没有任何行会被视为注释.
+        
+##### 跳过行
+
+文件中存在的标题和尾注会影响数据处理. 在这种情况下我们需要使用可选参数`skip_header`或`skip_footer`. 前者对应于在其他任何操作之前要跳过的`n`行, 后者对应跳过文件的后`n`行.
+
+???+ example "例子"
+
+    ```
+    [0]: data = "\n".join(str(i) for i in range(10))
+    [1]: data
+    '0\n1\n2\n3\n4\n5\n6\n7\n8\n9'
+    [2]: np.genfromtxt(StringIO(data))
+    array([0., 1., 2., 3., 4., 5., 6., 7., 8., 9.])
+    [3]: np.genfromtxt(StringIO(data), skip_header=3, skip_footer=5)
+    array([3., 4.])
+    ```
+    
+???+ tip "Tip"
+
+    默认情况下, 这两个参数都是`0`.
+
+##### 选择列
+
+某些情况下, 我们不关心所有的数据列, 只关系其中的几列. 可以使用`usecols`参数选择要导入的列, 此参数为一个元祖, 接受单个整数或一系列整数, 对应于要导入的列的索引.
+
+???+ example "例子"
+
+    ```
+    [1]: data = "1 2 3\n4 5 6"
+    [2]: np.genfromtxt(StringIO(data), usecols=(0, -1))
+    array([[1., 3.],
+           [4., 6.]])
+    ```
+    
+???+ tip "Tip"
+
+    如果列有名称, 还可以通过将名称作为参数提供给`usecols`
+    
+    ???+ example "例子"
+    
+        ```
+        [1]: data = "1 2 3\n4 5 6"
+        [2]: np.genfromtxt(StringIO(data), names="a, b, c", usecols=("a", "c"))
+        array([(1., 3.), (4., 6.)], dtype=[('a', '<f8'), ('c', '<f8')])
+        [3]: np.genfromtxt(StringIO(data), names="a, b, c", usecols=("a, c"))
+        array([(1., 3.), (4., 6.)], dtype=[('a', '<f8'), ('c', '<f8')])
+        ```
+        
+##### 设置名称
+
 
 [^1]: 使用 genfromtxt 导入数据—NumPy v1.26 手册—NumPy 中文. (n.d.). Retrieved June 24, 2024, from https://numpy.com.cn/doc/stable/user/basics.io.genfromtxt.html
 [^2]: NumPy IO | 菜鸟教程. (n.d.). Retrieved June 24, 2024, from https://www.runoob.com/numpy/numpy-io.html
