@@ -220,11 +220,32 @@ np.loadtxt("[file]", delimiter="[delimiter]")
 
 #### 定义输入
 
-`np.genfromtxt()`唯一的强制参数是数据源. 它可以是字符串, 字符串列表, 返回字符串的生成器或具有`read`方法的打开的文件类对象, 例如文件或`io.StringIO`对象. 
+`np.genfromtxt()`唯一的强制参数是数据源. 它可以是字符串, 字符串列表, 返回字符串的生成器或具有`read`方法的打开的文件类对象, 例如文件或`io.StringIO`对象, 详情见[这里](/基础/文件/#StringIO和BytesIO). 
 
 - 单个字符串: 假定它为本地文件的文件名
 - 字符串列表或返回字符串的生成器: 每个字符串都将视为文件中的一行
 - 远程文件URL: 文件将自动下载到当前目录并打开
+
+???+ warning "注意"
+
+    不能直接传入字符串, 否则会报错. 
+
+    ???+ example "例子"
+
+        定义:
+
+        ```py
+        data = u"1, 2, 3\n4, 5, 6"
+        np.genfromtxt(StringIO(data), delimiter=",") # 正确调用方式, 先转为文件
+        np.genfromtxt(data, delimiter=",") # 错误调用方式
+        ```
+
+        执行:
+
+        ```
+        $ python main.py
+        
+        ```
 
 #### 参数信息
 
