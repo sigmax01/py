@@ -17,8 +17,8 @@ Pandask可以读取的文件格式有很多, 这里主要介绍读写csv, excel,
 csv, excel, txt文件的读取函数分别是:
 
 - `pd.read_csv()`
-- `pd.read_table()`
 - `pd.read_excel()`
+- `pd.read_table()`
 
 ???+ example "例子"
 
@@ -50,28 +50,30 @@ csv, excel, txt文件的读取函数分别是:
 
 txt文件:
 
-`sep`: 用于自定义分割符号
+- `sep`: 用于自定义分割符号
 
-???+ example "例子"
+   ???+ example "例子"
 
-    ```
-    [1]: pd.read_table('data/my_table_special_sep.txt')
-                  col1 |||| col2
-    0  TS |||| This is an apple.
-    1    GQ |||| My name is Bob.
-    2         WT |||| Well done!
-    3    PT |||| May I help you?
-    [2]: pd.read_table('data/my_table_special_sep.txt', sep=' \|\|\|\| ', engine='python')
-      col1               col2
-    0   TS  This is an apple.
-    1   GQ    My name is Bob.
-    2   WT         Well done!
-    3   PT    May I help you?
-    ```
-    
-    ???+ warning "注意"
-    
-        在使用`sep`的同时, 需要指定引擎为python.
+      ```
+      [1]: pd.read_table('data/my_table_special_sep.txt')
+                     col1 |||| col2
+      0  TS |||| This is an apple.
+      1    GQ |||| My name is Bob.
+      2         WT |||| Well done!
+      3    PT |||| May I help you?
+      [2]: pd.read_table('data/my_table_special_sep.txt', sep=' \|\|\|\| ', engine='python')
+         col1               col2
+      0   TS  This is an apple.
+      1   GQ    My name is Bob.
+      2   WT         Well done!
+      3   PT    May I help you?
+      ```
+      
+      ???+ warning "注意"
+      
+         在使用`sep`的同时, 需要指定引擎为python.
+
+- `names`: 用于指定列标题
 
 公用参数:
 
@@ -121,6 +123,5 @@ txt文件:
 csv, excel, txt文件的写入方法分别是:
 
 - `<df_obj>.to_csv()`
-- Pandas没有定义`to_table()`方法, 但是可以用`to_csv()`方法保存为txt文件
 - `<df_obj>.to_excel()`
-
+- Pandas没有定义`to_table()`方法, 但是可以用`to_csv()`方法保存为txt文件
