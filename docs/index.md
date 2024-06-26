@@ -40,6 +40,7 @@
     - [x] [预备知识](/Pandas/预备知识)
     - [x] [数据结构](/Pandas/数据结构)
     - [ ] [IO](/Pandas/IO)
+    - [ ] [API](/Pandas/API)
 
 ## 推荐
 

@@ -124,4 +124,16 @@ csv, excel, txt文件的写入方法分别是:
 - Pandas没有定义`to_table()`方法, 但是可以用`to_csv()`方法保存为txt文件
 - `<df_obj>.to_excel()`
 
+???+ tip "Tip"
+
+	最常见的操作是将`index`设置为`False`, 这样能把索引在保存的时候去除.
+
+???+ example "例子"
+
+	```
+	[1]: df_csv.to_csv('data/my_csv_saved.csv', index=False)
+	[2]: df_excel.to_excel('data/my_excel_saved.xlsx', index=False)
+	[3]: df_txt.to_csv('data/my_txt_saved.txt', sep='\t', index=False)
+	```
+
 [^1]: 第二章 pandas基础—Joyful Pandas 1.0 documentation. (n.d.). Retrieved June 26, 2024, from https://inter.joyfulpandas.datawhale.club/Content/ch2.html
