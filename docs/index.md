@@ -37,8 +37,9 @@
     - [ ] [IO](/NumPy/IO)
     - [ ] [API](/NumPy/API)
 - [ ] Pandas
-    - [ ] [预备知识](/Pandas/预备知识)
-    - [ ] [数据结构](/Pandas/数据结构)
+    - [x] [预备知识](/Pandas/预备知识)
+    - [x] [数据结构](/Pandas/数据结构)
+    - [ ] [IO](/Pandas/IO)
 
 ## 推荐
 
