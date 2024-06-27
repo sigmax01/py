@@ -10,6 +10,8 @@ comments: true
 
 ## 汇总函数
 
+### `head`/`tail`函数
+
 - `head`函数表示返回表的前`n`行, 其中`n`默认为5
 - `tail`函数表示返回表的后`n`行, 其中`n`默认为5
 
@@ -25,6 +27,8 @@ comments: true
     198	Shanghai Jiao Tong University	Senior	Chengmei Shen	Male	175.3	71.0	N
     199	Tsinghua University	Sophomore	Chunpeng Lv	Male	155.7	51.0	N
     ```
+
+### `info`/`describe`函数
 
 - `info`函数表示返回表的信息概况
 - `describe`函数表示返回表的数值列对应的主要统计量
@@ -61,6 +65,8 @@ comments: true
 
 ## 特征统计函数
 
+### 常见函数
+
 最常见的特征函数有`sum, mean, median, var, std, max, min`.
 
 ???+ example "例子"
@@ -76,6 +82,8 @@ comments: true
     Weight     89.0
     dtype: float64
     ```
+
+### 特殊函数
 
 此外, 还有特殊的函数:
 
@@ -122,6 +130,8 @@ comments: true
 
 ## 唯一值函数
 
+### `unique`/`nunique`函数
+
 对序列使用`unique`和`nunique`函数可以得到其唯一值组成的列表和一个唯一值的个数.
 
 ???+ example "例子"
@@ -133,6 +143,8 @@ comments: true
     [2]: df['School'].nunique()
     4
     ```
+
+### `value_counts`函数
 
 `value_counts`函数可以得到唯一值和其对应出现的频数.
 
@@ -147,6 +159,8 @@ comments: true
     Peking University                34
     Name: count, dtype: int64
     ```
+
+### `drop_duplicates`函数
 
 若要观察多个列组合的唯一值, 可以使用`drop_duplicates`函数. 
 
@@ -189,7 +203,120 @@ comments: true
 
 ## 替换函数
 
-一般而言, 替换操作都是针对某一列进行的, 所以说下面的例子都以Series为例. 此处介绍`replace`的用法.
+一般而言, 替换操作都是针对某一列进行的, 所以说下面的例子都以Series为例.
+
+### `replace`函数
+
+此处介绍`replace`的用法.
+
+- 字典/列表构造替换
+
+    ???+ example "例子"
+
+        ```
+        [1]: df['Gender'].replace({'Female': 0, 'Male': 1}).head()
+        0    0
+        1    1
+        2    1
+        3    0
+        4    1
+        Name: Gender, dtype: int64
+        [2]: df['Gender'].replace(['Female', 'Male'], [0, 1]).head()
+        0    0
+        1    1
+        2    1
+        3    0
+        4    1
+        Name: Gender, dtype: int64
+        ```
+
+- 方向替换
+
+    - 若`method`参数为`ffill`则用前面一个最近的未被替换的值进行替换
+    - 若`method`参数为`bfill`则用后面一个最近的未被替换的值进行替换 
+
+    ???+ example "例子"
+
+        ```
+        [1]: s = pd.Series(['a', 1, 'b', 2, 1, 1, 'a'])
+        [2]: s
+        0    a
+        1    1
+        2    b
+        3    2
+        4    1
+        5    1
+        6    a
+        dtype: object
+        [3]: s.replace([1, 2], method='ffill')
+        0    a
+        1    a
+        2    b
+        3    b
+        4    b
+        5    b
+        6    a
+        dtype: object
+        [4]: s.replace([1, 2], method='bfill')
+        0    a
+        1    b
+        2    b
+        3    a
+        4    a
+        5    a
+        6    a
+        dtype: object
+        ```
+
+### `where`/`mask`函数
+
+`where`和`mask`函数是完全对称的, `where`函数在传入条件为`False`的对应行进行替换, 而`mask`在传入条件为`True`的对应行进行替换, 当不指定替换值时, 替换为缺失值. 
+
+???+ example "例子"
+
+    ```
+    [1]: s = pd.Series([-1, 1.2345, 100, -50])
+    [2]: s.where(s<0)
+    0    -1.0
+    1     NaN
+    2     NaN
+    3   -50.0
+    dtype: float64
+    [3]: s.where(s<0, 100)
+    0     -1.0
+    1    100.0
+    2    100.0
+    3    -50.0
+    dtype: float64
+    [4]: s.mask(s<0)
+    0         NaN
+    1      1.2345
+    2    100.0000
+    3         NaN
+    dtype: float64
+    [5]: s.mask(s<0, -50)
+    0    -50.0000
+    1      1.2345
+    2    100.0000
+    3    -50.0000
+    dtype: float64
+    ```
+
+    ???+ tip "Tip"
+
+        其实, `s<0`这个条件和与Series索引一致的布尔索引数组的效果是一样的.
+
+        ???+ example "例子"
+
+            ```
+            [1]: s_condition = pd.Series([True, False, False, True], index=s.index)
+            [2]: s.mask(s_condition, -50)
+            0    -50.0000
+            1      1.2345
+            2    100.0000
+            3    -50.0000
+            dtype: float64
+            ```
 
 
 
