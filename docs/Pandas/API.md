@@ -318,6 +318,135 @@ comments: true
             dtype: float64
             ```
 
+### `round`/`abs`/`clip`函数 
 
+`round`, `abs`, `clip`函数分别表示按照给定精度四舍五入, 取绝对值和截断.
+
+???+ example "例子"
+
+    ```
+    [1]: s = pd.Series([-1, 1.2345, 100, -50])
+    [2]: s.round(2)
+    0     -1.00
+    1      1.23
+    2    100.00
+    3    -50.00
+    dtype: float64
+    [3]: s.abs()
+    0      1.0000
+    1      1.2345
+    2    100.0000
+    3     50.0000
+    dtype: float64
+    [4]: s.clip(0, 2) # 这两个数表示上下截断边界
+    0    0.0000
+    1    1.2345
+    2    2.0000
+    3    0.0000
+    dtype: float64
+    ```
+
+## 排序函数
+
+### `sort_values`函数
+
+`sort_values1函数按照值排序.
+
+???+ example "例子"
+
+    ```
+    [1]: df_demo = df[['Height', 'Weight']]
+    [2]: df_demo.sort_values('Height').head()
+     	Height 	Weight
+    143 145.4 	34.0
+    49 	147.3 	34.0
+    120 147.8 	34.0
+    30 	148.7 	41.0
+    80 	150.5 	40.0
+    ```
+
+???+ note "笔记"
+
+    - 参数`ascending`可以调整升序/降序, 默认为升序
+
+        ???+ example "例子"
+
+            ```
+            [1]: df_demo = df[['Height', 'Weight']]
+            [2]: df_demo.sort_values('Height', ascending=False).head() # 降序
+                Height 	Weight
+            193 193.9 	79.0
+            2 	188.9 	89.0
+            134 186.5 	83.0
+            38 	185.3 	87.0
+            23 	183.9 	87.0
+            ```
+
+        - 多列排序的升序/降序需要向`ascending`传入相应的布尔索引数组
+
+            ???+ example "例子"
+
+                ```
+                [1]: df_demo = df[['Height', 'Weight']]
+                [2]: df_demo.sort_values(['Weight', 'Height'], ascending=[True, False]).head()
+                 	Height 	Weight
+                120 147.8 	34.0
+                49 	147.3 	34.0
+                143 145.4 	34.0
+                139 150.5 	36.0
+                108 152.4 	38.0
+                ```
+
+                上述例子中, 在体重相同的情况下, 对身高进行排序, 保持身高降序排列, 体重升序排列.
+
+### `sort_index`函数
+
+`sort_index`函数按照索引排序.
+
+索引排序的用法和值排序完全一致, 只不过元素的值在索引中, 此时需要指定索引层的名字或者层号, 用参数`level`表示. 
+
+???+ example "例子"
+
+    为了演示按照索引排序, 利用`set_index`函数将年级和姓名两列作为索引.
+
+    ```
+    [1]: df_demo = df[['Height', 'Weight']].set_index(['Grade', 'Name'])
+    [2]: df_demo.sort_index(level=['Grade', 'Name'], ascending=[True, False]).head()
+                            Height  Weight
+    Grade    Name                         
+    Freshman Yanquan Wang    163.5    55.0
+             Yanqiang Xu     152.4    38.0
+             Yanqiang Feng   162.3    51.0
+             Yanpeng Lv        NaN    65.0
+             Yanli Zhang     165.1    52.0
+    ```
+
+## `apply`函数
+
+`apply`函数常用于DataFrame的行迭代或者列迭代. 该函数接受一个高阶函数. 比较重要的参数是`axis`: 
+
+- `axis=1`: 每次传入的函数就是行元素组成的Series
+- `axis=0`: 每次传入的函数就是列元素组成的Series
+
+???+ example "例子"
+
+    ```
+    [1]: df_demo = df[['Height', 'Weight']]
+    [2]: df_demo.apply(lambda x:x.mean())
+    Height    163.218033
+    Weight     55.015873
+    dtype: float64
+    [3]: df_demo.apply(lambda x:x.mean(), axis=1).head()
+    0    102.45
+    1    118.25
+    2    138.95
+    3     41.00
+    4    124.00
+    dtype: float64
+    ```
+
+???+ tip "Tip"
+
+    得益于传入自定义函数, `apply`的自由度很高, 但是这是以性能作为代价的. 一般而言, 使用内置函数处理和`apply`来处理同一个任务, 其速度会相差很多, 因此之后再确定存在自定义需求的情境下才考虑使用`apply`.
 
 [^1]: 第二章 pandas基础—Joyful Pandas 1.0 documentation. (n.d.). Retrieved June 26, 2024, from https://inter.joyfulpandas.datawhale.club/Content/ch2.html
