@@ -31,11 +31,10 @@
     - [x] [数据类型](/NumPy/数据类型)
     - [x] [数组构建](/NumPy/数组构建)
     - [x] [视图/副本](/NumPy/视图副本)
-    - [x] [广播](/NumPy/广播)
+    - [x] [数组广播](/NumPy/广播)
     - [ ] [结构化数组](NumPy/结构化数组)
     - [x] [数组索引](/NumPy/数组索引)
-    - [x] [IO](/NumPy/IO)
-    - [ ] [API](/NumPy/API)
+    - [x] [文件存取](/NumPy/IO)
 - [ ] Pandas
     - [x] [预备知识](/Pandas/预备知识)
     - [x] [基础知识](/Pandas/基础知识)
