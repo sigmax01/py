@@ -33,14 +33,13 @@
     - [x] [视图/副本](/NumPy/视图副本)
     - [x] [广播](/NumPy/广播)
     - [ ] [结构化数组](NumPy/结构化数组)
-    - [ ] [数组索引](/NumPy/数组索引)
-    - [ ] [IO](/NumPy/IO)
+    - [x] [数组索引](/NumPy/数组索引)
+    - [x] [IO](/NumPy/IO)
     - [ ] [API](/NumPy/API)
 - [ ] Pandas
     - [x] [预备知识](/Pandas/预备知识)
-    - [x] [数据结构](/Pandas/数据结构)
-    - [ ] [IO](/Pandas/IO)
-    - [ ] [API](/Pandas/API)
+    - [x] [基础知识](/Pandas/基础知识)
+    - [ ] [数据索引](/Pandas/数据索引)
 
 ## 推荐
 

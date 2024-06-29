@@ -156,6 +156,5 @@ nav:
     - API: NumPy/API.md
   - Pandas:
     - 预备知识: Pandas/预备知识.md
-    - 数据结构: Pandas/数据结构.md
-    - IO: Pandas/IO.md
-    - API: Pandas/API.md
+    - 基础知识: Pandas/基础知识.md
+    - 数据索引: Pandas/数据索引.md
