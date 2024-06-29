@@ -70,6 +70,9 @@ extra:
       link: https://gitlab.com/ricolxwz
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/ricolxwz
+  analytics:
+    provider: google
+    property: G-B0Z1WDXCNC
   generator: false
 extra_css:
   - stylesheets/extra.css
