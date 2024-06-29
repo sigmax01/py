@@ -40,6 +40,10 @@
     - [x] [基础知识](/Pandas/基础知识)
     - [ ] [数据索引](/Pandas/数据索引)
 
+## 机器学习
+
+[项目主页](https://ml.ricolxwz.de)
+
 ## 推荐
 
 - 码农高天: [bilibili主页](https://space.bilibili.com/245645656), Pyhon核心开发者
