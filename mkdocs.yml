@@ -160,3 +160,5 @@ nav:
     - 预备知识: Pandas/预备知识.md
     - 基础知识: Pandas/基础知识.md
     - 数据索引: Pandas/数据索引.md
+  - Matplotlib:
+    - 基础知识: Matplotlib/基础知识.md
