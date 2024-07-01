@@ -40,7 +40,9 @@
     - [x] [基础知识](/Pandas/基础知识)
     - [ ] [数据索引](/Pandas/数据索引)
 - [ ] Matplotlib
-    - [ ] [基础知识](/Matplotlib/基础知识)
+    - [x] [基础知识](/Matplotlib/基础知识)
+    - [x] [散点图](/Matplotlib/散点图)
+    - [x] [柱形图](/Matplotlib/柱形图)
 
 ## 机器学习
 
