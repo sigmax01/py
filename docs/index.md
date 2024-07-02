@@ -44,6 +44,7 @@
     - [x] [散点图](/Matplotlib/散点图)
     - [x] [柱形图](/Matplotlib/柱形图)
     - [x] [饼图](/Matplotlib/饼图)
+    - [x] [直方图](/Matplotlib/直方图)
 
 ## 机器学习
 

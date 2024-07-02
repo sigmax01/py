@@ -165,3 +165,4 @@ nav:
     - 散点图: Matplotlib/散点图.md
     - 柱形图: Matplotlib/柱形图.md
     - 饼图: Matplotlib/饼图.md
+    - 直方图: Matplotlib/直方图.md
