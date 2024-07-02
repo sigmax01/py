@@ -43,6 +43,7 @@
     - [x] [基础知识](/Matplotlib/基础知识)
     - [x] [散点图](/Matplotlib/散点图)
     - [x] [柱形图](/Matplotlib/柱形图)
+    - [x] [饼图](/Matplotlib/饼图)
 
 ## 机器学习
 

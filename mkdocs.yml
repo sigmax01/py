@@ -164,3 +164,4 @@ nav:
     - 基础知识: Matplotlib/基础知识.md
     - 散点图: Matplotlib/散点图.md
     - 柱形图: Matplotlib/柱形图.md
+    - 饼图: Matplotlib/饼图.md
