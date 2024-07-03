@@ -46,6 +46,8 @@
     - [x] [饼图](/Matplotlib/饼图)
     - [x] [直方图](/Matplotlib/直方图)
     - [ ] [热力图](/Matplotlib/热力图)
+- [ ] Seaborn
+    - [ ] [简要介绍](/Seaborn/简要介绍)
 
 ## 机器学习
 

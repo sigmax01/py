@@ -167,3 +167,5 @@ nav:
     - 饼图: Matplotlib/饼图.md
     - 直方图: Matplotlib/直方图.md
     - 热力图: Matplotlib/热力图.md
+  - Seaborn:
+    - 简要介绍: Seaborn/简要介绍.md
