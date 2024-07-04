@@ -39,6 +39,7 @@
     - [x] [预备知识](/Pandas/预备知识)
     - [x] [基础知识](/Pandas/基础知识)
     - [x] [数据索引](/Pandas/数据索引)
+    - [ ] [数据分组](/Pandas/数据分组)
 - [ ] Matplotlib
     - [x] [基础知识](/Matplotlib/基础知识)
     - [x] [散点图](/Matplotlib/散点图)
