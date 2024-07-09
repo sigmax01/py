@@ -1,7 +1,7 @@
 ---
 title: hmac
 icon: material/format-header-pound
-comments: true
+comments: false
 ---
 
 通过摘要算法, 可以验证一段数据是否有效. 为了防止黑客通过[彩虹表](https://zh.wikipedia.org/wiki/%E5%BD%A9%E8%99%B9%E8%A1%A8)根据摘要反推原始口令, 在计算摘要的时候, 不能仅仅针对原始输入计算, 需要增加一个[盐, salt](https://zh.wikipedia.org/wiki/%E7%9B%90_(%E5%AF%86%E7%A0%81%E5%AD%A6)), 这个盐会与原始口令结合(通常是将盐放到原始口令的前面或者后面), 然后通过摘要算法计算摘要. 如果这个盐的值是随机的, 那么每次原始口令相同, 但是得到的摘要都是不一样的.

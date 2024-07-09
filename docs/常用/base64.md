@@ -1,7 +1,7 @@
 ---
 title: base64
 icon: material/file-arrow-left-right-outline
-comments: true
+comments: false
 ---
 
 `base64`模块用于在原始二进制数据和base64编码后的只含ASCII字符串的二进制数据之间转换.

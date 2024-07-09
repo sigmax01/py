@@ -1,7 +1,7 @@
 ---
 title: itertools
 icon: material/reiterate
-comments: true
+comments: false
 ---
 
 `itertools`模块提供了非常有用的用于操作[迭代器](/基础/容器/#迭代器)的函数.

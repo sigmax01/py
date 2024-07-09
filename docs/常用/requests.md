@@ -1,7 +1,7 @@
 ---
 title: requests
 icon: material/microsoft-internet-explorer
-comments: true
+comments: false
 ---
 
 ## 请求

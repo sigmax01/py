@@ -1,7 +1,7 @@
 ---
 title: datetime
 icon: material/timelapse
-comments: true
+comments: false
 ---
 
 `datetime`是Python处理日期和时间的模块, 需要用到里面的`datetime`类.

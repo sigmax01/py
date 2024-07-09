@@ -1,7 +1,7 @@
 ---
 title: IO
 icon: material/table-network
-comments: true
+comments: false
 ---
 
 ???+ info "信息"

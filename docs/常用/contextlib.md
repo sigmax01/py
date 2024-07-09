@@ -1,7 +1,7 @@
 ---
 title: contextlib
 icon: material/boom-gate-up-outline
-comments: true
+comments: false
 ---
 
 ## 上下文管理器

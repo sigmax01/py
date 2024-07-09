@@ -1,7 +1,7 @@
 ---
 title: collections
 icon: material/set-left-center
-comments: true
+comments: false
 ---
 
 ## 命名元组

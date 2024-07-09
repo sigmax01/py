@@ -1,7 +1,7 @@
 ---
 title: argparse
 icon: material/console
-comments: true
+comments: false
 ---
 
 在命令行程序中, 经常需要获取命令行参数. Python内置的`sys.argv`保存了完整的参数列表.

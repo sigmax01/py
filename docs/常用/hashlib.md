@@ -1,7 +1,7 @@
 ---
 title: hashlib
 icon: material/pound
-comments: true
+comments: false
 ---
 
 ## 目的
