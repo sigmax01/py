@@ -41,6 +41,7 @@
     - [x] [数据索引](/Pandas/数据索引)
     - [ ] [数据分组](/Pandas/数据分组)
 - [ ] Matplotlib
+    - [x] [绪论](/Matplotlib/绪论)
     - [x] [基础知识](/Matplotlib/基础知识)
     - [x] [散点图](/Matplotlib/散点图)
     - [x] [柱形图](/Matplotlib/柱形图)

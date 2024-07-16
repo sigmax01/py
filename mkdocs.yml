@@ -166,6 +166,7 @@ nav:
     - 数据索引: Pandas/数据索引.md
     - 数据分组: Pandas/数据分组.md
   - Matplotlib:
+    - 绪论: Matplotlib/绪论.md
     - 基础知识: Matplotlib/基础知识.md
     - 散点图: Matplotlib/散点图.md
     - 柱形图: Matplotlib/柱形图.md
