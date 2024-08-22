@@ -142,6 +142,7 @@ nav:
     - 数据库: 基础/数据库.md
     - 错误/调试/测试: 基础/调试.md
     - 编码: 基础/编码.md
+    - PVM: 基础/PVM.md
     - 其他: 基础/其他.md
   - 常用:
     - datetime: 常用/datetime.md
