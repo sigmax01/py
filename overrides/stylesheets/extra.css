@@ -42,3 +42,9 @@
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   background-color: var(--md-header-bg-color);
 }
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0;
+  border-left-width: 4px;
+}
