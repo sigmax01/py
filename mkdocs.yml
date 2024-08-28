@@ -130,6 +130,8 @@ plugins:
   - glightbox
   - git-revision-date-localized:
       locale: zh
+      enable_creation_date: true
+  - git-authors
 nav:
   - 开始:
     - index.md
