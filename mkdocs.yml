@@ -144,9 +144,11 @@ plugins:
   - git-revision-date-localized:
       locale: zh
       enable_creation_date: true
+      enabled: !ENV [CI, false]
   - git-committers:
       repository: ricolxwz/py
       branch: master
+      enabled: !ENV [CI, false]
   - section-index
 nav:
   - 开始:
