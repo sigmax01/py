@@ -2,6 +2,10 @@
 
 欢迎来到Python笔记项目.
 
+## 分析
+
+[https://umami.ricolxwz.io/share/ch90VwNpJX3kM1r9/py.ricolxwz.de](https://umami.ricolxwz.io/share/ch90VwNpJX3kM1r9/py.ricolxwz.de).
+
 ## 联动
 
 - [https://py.ricolxwz.de](https://py.ricolxwz.de)
