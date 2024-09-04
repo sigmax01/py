@@ -74,9 +74,6 @@ extra:
       link: https://gitlab.com/ricolxwz
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/ricolxwz
-  analytics:
-    provider: google
-    property: G-B0Z1WDXCNC
   generator: false
 extra_css:
   - stylesheets/extra.css
@@ -86,6 +83,7 @@ extra_javascript:
   - javascripts/katex.js
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  - umami.js
 markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
