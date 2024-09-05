@@ -4,7 +4,7 @@
 
 ## 分析
 
-[https://umami.ricolxwz.io/share/ch90VwNpJX3kM1r9/py.ricolxwz.de](https://umami.ricolxwz.io/share/ch90VwNpJX3kM1r9/py.ricolxwz.de).
+https://link.ricolxwz.io/pystatus
 
 ## 联动
 
