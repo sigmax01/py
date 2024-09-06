@@ -4,7 +4,7 @@
 
 ## 分析
 
-https://link.ricolxwz.io/pystatus
+https://link.ricolxwz.io/pyanalysis
 
 ## 联动
 
