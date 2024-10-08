@@ -2813,7 +2813,7 @@
 <h3 id="readreadlinereadlines"><code>read()</code>/<code>readline()</code>/<code>readlines()</code></h3>
 <p>如果文件打开成功, 并设置读权限, 可以用</p>
 <ul>
-<li><code>read()</code>方法一次性读取文件的全部内容</li>
+<li><code>read()</code>方法一次性读取文件的全部内容, 可以接受一个整数<span class="arithmatex">\(n\)</span>表示读取<span class="arithmatex">\(n\)</span>字节的内容</li>
 <li><code>readline()</code>读取一行内容</li>
 <li><code>readlines()</code>读取所有内容并返回列表</li>
 </ul>
@@ -2835,6 +2835,10 @@
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    print(&#39;Hello, World!&#39;, file=f)
 </code></pre></div>
 </details>
+<details class="tip" open="open">
+<summary>Tip</summary>
+<p>注意, 使用<code>print</code>在末尾会自动添加新行, 但是<code>write</code>不会在末尾自动添加新行.</p>
+</details>
 <h3 id="write"><code>write()</code></h3>
 <p>如果文件打开成功, 并设置写权限, 可以用<code>write()</code>来写入数据.</p>
 <details class="example" open="open">
@@ -2847,6 +2851,7 @@
 <ul>
 <li>务必使用<a href="#close"><code>close()</code></a>关闭文件. 因为当我们写文件的时候, 操作系统往往不会把数据立刻写入磁盘, 而是先在内存中缓存, 然后空闲的时候写入. 只有调用了<code>close()</code>, 操作系统才能保证把没有写入的数据全部写入磁盘. 为了避免没有调用<code>close()</code>, 推荐使用<code>with</code>语句. </li>
 <li><code>write()</code>函数不会自动在字符串的最后添加一个换行符</li>
+<li><code>write()</code>最后返回的是写入的字符的数量</li>
 </ul>
 </details>
 <h3 id="writelines"><code>writelines()</code></h3>
@@ -2875,6 +2880,9 @@
 </details>
 <details class="tip" open="open">
 <summary>Tip</summary>
+<ul>
+<li>如果有多个<code>close()</code>, 只有第一个会生效</li>
+<li>
 <p><code>with</code>语句可以自动帮助我们调用<code>close()</code>方法. </p>
 <details class="example" open="open">
 <summary>例子</summary>
@@ -2882,6 +2890,8 @@
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre></div>
 </details>
+</li>
+</ul>
 </details>
 <h2 id="os"><code>os</code>模块</h2>
 <p>如果我们要操作文件、目录, 可以在bash下使用<code>dir, cp</code>等命令, 这些命令实际上是调用了操作系统提供的接口. Python内置的<code>os</code>模也可以直接调用操作系统的接口实现相同的功能. </p>
@@ -3294,7 +3304,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年9月21日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年10月8日</span>
   </span>
 
     
@@ -3325,6 +3335,11 @@
         <a href="https://github.com/ricolxwz" class="md-author" title="@ricolxwz">
           
           <img src="https://avatars.githubusercontent.com/u/92409532?v=4&size=72" alt="ricolxwz">
+        </a>
+      
+        <a href="https://github.com/web-flow" class="md-author" title="@web-flow">
+          
+          <img src="https://avatars.githubusercontent.com/u/19864447?v=4&size=72" alt="web-flow">
         </a>
       
       
