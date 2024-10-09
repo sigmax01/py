@@ -8,7 +8,7 @@ comments: false
 
     前置知识:
 
-    - [数组构建](/NumPy/数组构建)
+    - [数组构建](/numpy/array-creation)
 
 ## 数组的数据结构 {#数组的数据结构}
 

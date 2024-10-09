@@ -75,7 +75,7 @@ comments: false
     - 如果子进程需要与父进程共享某些数据, 可以使用各种进程间通信机制, 如管道、队列、共享内存等
     - 子进程有自己独立的地址空间, 文件描述符表, 栈等资源
 
-Python中创建子进程的模块有三个: [`os`](#os模块), [`subprocess`](#subprocess模块)和[`multiprocessing`](#multiprocessing模块), 这三个模块各自有各自的特色, 在选用的时候要仔细甄别.
+Python中创建子进程的模块有三个: [`os`](#osmodule), [`subprocess`](#subprocessmodule)和[`multiprocessing`](#multiprocessingmodule), 这三个模块各自有各自的特色, 在选用的时候要仔细甄别.
 
 ### `os`模块 {#os模块}
 
@@ -234,7 +234,7 @@ Python中创建子进程的模块有三个: [`os`](#os模块), [`subprocess`](#s
 
 ### 进程池 {#进程池}
 
-进程池由[multiprocessing模块](#multiprocessing模块)的`Pool`类提供支持.
+进程池由[multiprocessing模块](#multiprocessingmodule)的`Pool`类提供支持.
 
 ???+ example "例子"
 
@@ -291,7 +291,7 @@ Python中创建子进程的模块有三个: [`os`](#os模块), [`subprocess`](#s
 
 ### 进程间通信
 
-队列式进程间通信由[multiprocessing模块](#multiprocessing模块)的`Queue`类提供支持, 此外还有管道式进程间通信, 这里不会详细介绍.
+队列式进程间通信由[multiprocessing模块](#multiprocessingmodule)的`Queue`类提供支持, 此外还有管道式进程间通信, 这里不会详细介绍.
 
 ???+ example "例子"
 
@@ -444,7 +444,7 @@ Python中创建线程的模块有两个: `_thread`和`threading`, `_thread`是�
 
 ## 协程
 
-协程将会在[这里](/基础/异步/#协程)讲到.
+协程将会在[这里](/foundation/async/#协程)讲到.
 
 ## 锁
 
@@ -624,7 +624,7 @@ GIL锁, Global Interpreter Lock, 全局解释器锁, 是Python解释器中的一
 要实现多任务, 通常我们会设计Master-Worker模式, Master负责分配任务, Worker负责执行任务, 在多任务环境下, 通常为一个Master, 多个Worker. 
 
 - 如果用[多进程](#多进程)实现, 主进程为Master, 其他子进程为Worker
-- 如果用[多线程](#多线程)实现, 主线程为Master, 其他线程为Worker
+- 如果用[多线程](#多threading)实现, 主线程为Master, 其他线程为Worker
 
 协程使用的不是Master-Worker模式, 它使用的是单个线程, 使用的是异步的方法来模拟执行多任务.
 

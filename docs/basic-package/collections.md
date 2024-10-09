@@ -6,7 +6,7 @@ comments: false
 
 ## 命名元组
 
-元组可以表示不变的集合, 为了表示的清晰, 我们可以基于元组类`tuple`创建自己的类, `collections`模块中的`namedtumple`函数内部通过调用[`type()`函数](/基础/对象/#type)可以创造一个`tuple`的子类, 允许我们自定义这个类的名称, 所以被称为命名元组.
+元组可以表示不变的集合, 为了表示的清晰, 我们可以基于元组类`tuple`创建自己的类, `collections`模块中的`namedtumple`函数内部通过调用[`type()`函数](/foundation/object/#type)可以创造一个`tuple`的子类, 允许我们自定义这个类的名称, 所以被称为命名元组.
 
 ???+ example "例子"
 
@@ -41,8 +41,8 @@ comments: false
 - `[dequeue_instance].appendleft([value])`: 在左端添加元素
 - `[var] = [dequeue_instance].pop()`: 移除右端元素, 返回值
 - `[var] = [dequeue_instance].popleft()`: 移除左端元素, 返回值
-- `[dequue_instance].extend([iterable])`: 在右端扩展[可迭代对象](/基础/容器/#迭代器和可迭代对象的区别)中的所有元素
-- `[dequue_instance].extendleft([iterable])`: 在左端扩展[可迭代对象](/基础/容器/#迭代器和可迭代对象的区别)中的所有元素
+- `[dequue_instance].extend([iterable])`: 在右端扩展[可迭代对象](/foundation/container/#迭代器和可迭代对象的区别)中的所有元素
+- `[dequue_instance].extendleft([iterable])`: 在左端扩展[可迭代对象](/foundation/container/#迭代器和可迭代对象的区别)中的所有元素
 - `[dequeue_instance].rotate([num])`: 将对象中的元素循环右移`[num]`位
 
 ???+ example "例子"
@@ -92,7 +92,7 @@ comments: false
 
 ???+ warning "注意"
 
-    默认值时调用函数返回的, 函数在创建`defaultdict`对象时作为[高阶函数](/基础/函数/#高阶函数)传入.
+    默认值时调用函数返回的, 函数在创建`defaultdict`对象时作为[高阶函数](/foundation/function/#高阶function)传入.
 
 ## 顺序字典
 
@@ -122,7 +122,7 @@ comments: false
 
 ???+ example "例子"
 
-    什么时候用链式字典最合适? 应用程序往往需要传入参数, 参数可以通过[命令行传入](/常用/argparse), 可以通过环境变量传入, 还可以有默认参数, 我们可以用ChainMap实现参数的优先级查找, 即先查命令行参数, 如果没有传入, 再查环境变量, 如果没有, 就是用默认参数.
+    什么时候用链式字典最合适? 应用程序往往需要传入参数, 参数可以通过[命令行传入](/basic-package/argparse), 可以通过环境变量传入, 还可以有默认参数, 我们可以用ChainMap实现参数的优先级查找, 即先查命令行参数, 如果没有传入, 再查环境变量, 如果没有, 就是用默认参数.
 
     ```py
     from collections import ChainMap

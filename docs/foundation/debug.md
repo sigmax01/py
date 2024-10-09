@@ -260,8 +260,8 @@ comments: false
 
 1. 打印变量
 2. [`assert`](#断言)
-3. [`logging`模块](#logging模块)
-4. [`pdb`模块](#pdb模块)
+3. [`logging`模块](#loggingmodule)
+4. [`pdb`模块](#pdbmodule)
 5. IDE
 
 ### 断言 {#断言}

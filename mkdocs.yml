@@ -152,50 +152,50 @@ nav:
   - 开始:
     - index.md
   - 基础:
-    - 绪论: 基础/绪论.md
-    - 容器: 基础/容器.md
-    - 函数: 基础/函数.md
-    - 对象: 基础/对象.md
-    - 文件: 基础/文件.md
-    - 模块/包/库: 基础/模块.md
-    - 网络: 基础/网络.md
-    - 多进程/多线程: 基础/线程.md
-    - 异步: 基础/异步.md
-    - 数据库: 基础/数据库.md
-    - 错误/调试/测试: 基础/调试.md
-    - 编码: 基础/编码.md
-    - PVM: 基础/PVM.md
-    - 其他: 基础/其他.md
+    - foundation/index.md
+    - 容器: foundation/container.md
+    - 函数: foundation/function.md
+    - 对象: foundation/object.md
+    - 文件: foundation/io.md
+    - 模块/包/库: foundation/module.md
+    - 网络: foundation/network.md
+    - 多进程/多线程: foundation/threading.md
+    - 异步: foundation/async.md
+    - 数据库: foundation/database.md
+    - 错误/调试/测试: foundation/debug.md
+    - 编码: foundation/encoding.md
+    - PVM: foundation/pvm.md
+    - 其他: foundation/misc.md
   - 常用:
-    - datetime: 常用/datetime.md
-    - collections: 常用/collections.md
-    - argparse: 常用/argparse.md
-    - base64: 常用/base64.md
-    - hashlib: 常用/hashlib.md
-    - hmac: 常用/hmac.md
-    - itertools: 常用/itertools.md
-    - contextlib: 常用/contextlib.md
-    - requests: 常用/requests.md
+    - datetime: basic-package/datetime.md
+    - collections: basic-package/collections.md
+    - argparse: basic-package/argparse.md
+    - base64: basic-package/base64.md
+    - hashlib: basic-package/hashlib.md
+    - hmac: basic-package/hmac.md
+    - itertools: basic-package/itertools.md
+    - contextlib: basic-package/contextlib.md
+    - requests: basic-package/requests.md
   - NumPy:
-    - 数据类型: NumPy/数据类型.md
-    - 数组构建: NumPy/数组构建.md
-    - 视图/副本: NumPy/视图副本.md
-    - 数组广播: NumPy/广播.md
-    - 结构化数组: NumPy/结构化数组.md
-    - 数组索引: NumPy/数组索引.md
-    - 文件存取: NumPy/IO.md
+    - 数据类型: numpy/datatype.md
+    - 数组构建: numpy/array-creation.md
+    - 视图/副本: numpy/view-copy.md
+    - 数组广播: numpy/broadcast.md
+    - 结构化数组: numpy/structured-array.md
+    - 数组索引: numpy/array-index.md
+    - 文件存取: numpy/io.md
   - Pandas:
-    - 预备知识: Pandas/预备知识.md
-    - 基础知识: Pandas/基础知识.md
-    - 数据索引: Pandas/数据索引.md
-    - 数据分组: Pandas/数据分组.md
+    - 预备知识: pandas/preliminary-knowledge.md
+    - 基础知识: pandas/foundation.md
+    - 数据索引: pandas/data-index.md
+    - 数据分组: pandas/grouping.md
   - Matplotlib:
-    - 绪论: Matplotlib/绪论.md
-    - 基础知识: Matplotlib/基础知识.md
-    - 散点图: Matplotlib/散点图.md
-    - 柱形图: Matplotlib/柱形图.md
-    - 饼图: Matplotlib/饼图.md
-    - 直方图: Matplotlib/直方图.md
-    - 热力图: Matplotlib/热力图.md
+    - matplotlib/index.md
+    - 基础知识: matplotlib/foundation.md
+    - 散点图: matplotlib/scatter-chart.md
+    - 柱形图: matplotlib/column-chart.md
+    - 饼图: matplotlib/pie-chart.md
+    - 直方图: matplotlib/histogram.md
+    - 热力图: matplotlib/heat-map.md
   - Seaborn:
-    - 简要介绍: Seaborn/简要介绍.md
+    - 简要介绍: seaborn/introduction.md

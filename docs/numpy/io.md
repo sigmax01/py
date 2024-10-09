@@ -7,15 +7,15 @@ comments: false
 ???+ info "信息"
 
     - 默认省略导入`import numpy as np`.
-    - 默认省略导入`from io import StringIO`: [`np.genfromtxt`函数](#genfromtxt函数)
+    - 默认省略导入`from io import StringIO`: [`np.genfromtxt`函数](#genfromtxtfunction)
     - 前置知识
-        - [结构化数组](/NumPy/结构化数组): [设置名称](#设置名称), [调整转换](#调整转换), [快捷函数](#快捷函数).
+        - [结构化数组](/numpy/structured-array): [设置名称](#设置名称), [调整转换](#调整转换), [快捷函数](#快捷function).
 
-根据文件的不同, 可以将用于IO的文件分为二进制文件和文本文件, 关于它们的区别, 见[这里](/基础/编码#文本文件和二进制文件).
+根据文件的不同, 可以将用于IO的文件分为二进制文件和文本文件, 关于它们的区别, 见[这里](/foundation/编码#文本文件和二进制io).
 
 ## 二进制文件
 
-在[数组构建](/NumPy/数组构建)章节中, 我们介绍了简单的读写HDF5二进制文件的[方式](/NumPy/数组构建/#读取二进制文件). 
+在[数组构建](/numpy/array-creation)章节中, 我们介绍了简单的读写HDF5二进制文件的[方式](/numpy/array-creation/#读取二进制io). 
 
 其实, NumPy还有一个原生的二进制文件格式: npy格式. 常用于npy文件的IO函数有:
 
@@ -50,7 +50,7 @@ np.save("[file]", [arr], allow_pickle=[True/False], fix_imports=[True/False])
         若文件路径末尾没有加扩展名`.npy`, 解释器会自动帮我们加上.
 
 - `[arr]`: 要保存的数组
-- `allowpickle=[True/False]`: `pickle`模块的作用见[这里](/基础/文件/#序列化对象为二进制文件). 若为`True`, 则允许保存含有对象的数组, `pickle`模块会在保存和读取之前, 对数组里面的对象进行序列化和反序列化
+- `allowpickle=[True/False]`: `pickle`模块的作用见[这里](/foundation/io/#序列化对象为二进制io). 若为`True`, 则允许保存含有对象的数组, `pickle`模块会在保存和读取之前, 对数组里面的对象进行序列化和反序列化
 
     ???+ example "例子"
 
@@ -145,13 +145,13 @@ np.savez("[file]", [*args], [**kwds])
 
         若文件路径末尾没有加扩展名`.npz`, 解释器会自动帮我们加上.
 
-- `[*args]`: 要保存的数组, 使用[可变参数](/基础/函数/#可变参数)传入, 数组会自动起名为`arr_0, arr_1, ...`
+- `[*args]`: 要保存的数组, 使用[可变参数](/foundation/function/#可变参数)传入, 数组会自动起名为`arr_0, arr_1, ...`
 
-- `[**kwds]`: 要保存的数组, 使用[关键字参数](/基础/函数/#关键字参数)传入
+- `[**kwds]`: 要保存的数组, 使用[关键字参数](/foundation/function/#关键字参数)传入
 
 ## 文本文件
 
-在[数组构建](/NumPy/数组构建)章节中, 我们介绍了简单的读写csv文本文件的[方式](/NumPy/数组构建/#读取文本文件). 
+在[数组构建](/numpy/array-creation)章节中, 我们介绍了简单的读写csv文本文件的[方式](/numpy/array-creation/#读取文本io). 
 
 我们也可以自定义文本文件的结构, 如分隔符等.
 
@@ -222,7 +222,7 @@ np.loadtxt("[file]", delimiter="[delimiter]")
 
 #### 定义输入
 
-`np.genfromtxt()`唯一的强制参数是数据源. 它可以是字符串, 字符串列表, 返回字符串的生成器或具有`read`方法的打开的文件类对象, 例如文件或`io.StringIO`对象, 详情见[这里](/基础/文件/#StringIO和BytesIO). 
+`np.genfromtxt()`唯一的强制参数是数据源. 它可以是字符串, 字符串列表, 返回字符串的生成器或具有`read`方法的打开的文件类对象, 例如文件或`io.StringIO`对象, 详情见[这里](/foundation/io/#StringIO和BytesIO). 
 
 - 单个字符串: 假定它为本地文件的文件名
 - 字符串列表或返回字符串的生成器: 每个字符串都将视为文件中的一行

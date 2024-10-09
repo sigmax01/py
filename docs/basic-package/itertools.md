@@ -4,7 +4,7 @@ icon: material/reiterate
 comments: false
 ---
 
-`itertools`模块提供了非常有用的用于操作[迭代器](/基础/容器/#迭代器)的函数.
+`itertools`模块提供了非常有用的用于操作[迭代器](/foundation/container/#迭代器)的函数.
 
 ## "无限"迭代器
 
@@ -43,7 +43,7 @@ comments: false
 
 ### `cycle()`
 
-`cycle([iterable])`会把传入的[可迭代对象](/基础/容器/#迭代器和可迭代对象的区别)转为一个迭代器, 并"无限"重复.
+`cycle([iterable])`会把传入的[可迭代对象](/foundation/container/#迭代器和可迭代对象的区别)转为一个迭代器, 并"无限"重复.
 
 ???+ example "例子"
 
@@ -80,7 +80,7 @@ comments: false
 
 ## 串联可迭代对象
 
-`chain([iterable1], [iterable2])`可以把一组[可迭代对象](/基础/容器/#迭代器和可迭代对象的区别)串联起来, 形成一个更大的迭代器:
+`chain([iterable1], [iterable2])`可以把一组[可迭代对象](/foundation/container/#迭代器和可迭代对象的区别)串联起来, 形成一个更大的迭代器:
 
 ???+ example "例子"
 
@@ -99,7 +99,7 @@ comments: false
 
 ## 返回相邻重复元素
 
-`groupby([iterable])`把[可迭代对象](/基础/容器/#迭代器和可迭代对象的区别)中相邻的重复元素挑出来放在一起.
+`groupby([iterable])`把[可迭代对象](/foundation/container/#迭代器和可迭代对象的区别)中相邻的重复元素挑出来放在一起.
 
 ???+ example "例子"
 

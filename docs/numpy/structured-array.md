@@ -8,9 +8,9 @@ comments: false
 
     前置知识:
     
-    - [数据类型](/NumPy/数据类型)
-    - [数组构建](/NumPy/数组构建)
-    - [数组索引](/NumPy/数组索引): [字段索引](#字段索引)
+    - [数据类型](/numpy/datatype)
+    - [数组构建](/numpy/array-creation)
+    - [数组索引](/numpy/array-index): [字段索引](#字段索引)
         
 ## 简介 {#简介}
 
@@ -32,7 +32,7 @@ comments: false
         
 ## 字段索引 {#字段索引}
 
-详情见[这里](/NumPy/数组索引/#字段索引).
+详情见[这里](/numpy/array-index/#字段索引).
 
 ## 结构化数据类型
 

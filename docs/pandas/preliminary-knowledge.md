@@ -8,15 +8,15 @@ comments: false
 
 ### 列表生成式
 
-详情见[这里](/基础/容器/#列表生成式).
+详情见[这里](/foundation/container/#列表生成式).
 
 ### 匿名函数
 
-匿名函数即Lambda函数, 详情见[这里](/基础/函数/#Lambda函数).
+匿名函数即Lambda函数, 详情见[这里](/foundation/function/#Lambdafunction).
 
 ### `map`函数
 
-`map`函数, 详情见[这里](/基础/函数/#map函数).
+`map`函数, 详情见[这里](/foundation/function/#mapfunction).
 
 ### `zip`函数
 
@@ -105,21 +105,21 @@ comments: false
 
 ### 数组构建
 
-详情见[这里](/NumPy/数组构建).
+详情见[这里](/numpy/array-creation).
 
 ### 数组索引
 
-详情见[这里](/NumPy/数组索引).
+详情见[这里](/numpy/array-index).
 
 ### 广播
 
-详情见[这里](/NumPy/广播).
+详情见[这里](/numpy/broadcast).
 
 ### 数组变形与合并
 
 #### 转置
 
-访问数组的`T`属性, 返回的数组是一个[视图](/NumPy/视图副本/#视图).
+访问数组的`T`属性, 返回的数组是一个[视图](/numpy/view-copy/#视图).
 
 ???+ example "例子"
 
@@ -259,7 +259,7 @@ comments: false
     
 #### `np.nonzero`函数
 
-`np.nonzero`函数返回的时非零数的索引. 这个函数可用于[布尔数组索引](/NumPy/数组索引/#布尔数组索引)到整数数组索引的转换.
+`np.nonzero`函数返回的时非零数的索引. 这个函数可用于[布尔数组索引](/numpy/array-index/#布尔array-index)到整数数组索引的转换.
 
 ???+ example "例子"
 

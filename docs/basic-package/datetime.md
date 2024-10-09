@@ -8,7 +8,7 @@ comments: false
 
 ## 获取当前日期和时间
 
-`datetime.now()`会返回一个`datetime`类的实例. 这个对象中有一个`__repr__`方法, 详情参见[`__str__`方法](/基础/对象/#str), 可以用于打印这个对象, 内容是它所代表的时间.
+`datetime.now()`会返回一个`datetime`类的实例. 这个对象中有一个`__repr__`方法, 详情参见[`__str__`方法](/foundation/object/#str), 可以用于打印这个对象, 内容是它所代表的时间.
 
 ???+ example "例子"
 

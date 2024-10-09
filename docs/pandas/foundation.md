@@ -19,7 +19,7 @@ Pandas中具有两种基本的数据结构, 存储一维数据的Series和二维
 
 ???+ tip "Tip"
 
-    Series和DataFrame和NumPy中的[结构化数组](/NumPy/结构化数组)类似, 功能上, 前者远胜后者.
+    Series和DataFrame和NumPy中的[结构化数组](/numpy/structured-array)类似, 功能上, 前者远胜后者.
 
 ### Series
 

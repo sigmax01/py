@@ -6,7 +6,7 @@ comments: false
 
 ## 上下文管理器
 
-参见[上下文管理器](/基础/对象/#上下文管理器)
+参见[上下文管理器](/foundation/object/#上下文管理器)
 
 ## `@contextmanager`
 

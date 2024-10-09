@@ -370,7 +370,7 @@ comments: false
 
 ### `__iter__()` {#iter}
 
-`__iter__()`特殊方法可以把一个实例变为[迭代器](/基础/容器/#迭代器). 该方法返回一个[迭代器](/基础/容器/#迭代器), 然后for循环就会不断调用该迭代对象的`__next__()`方法拿到下一个值, 知道遇到`StopIteration`错误退出循环.
+`__iter__()`特殊方法可以把一个实例变为[迭代器](/foundation/container/#迭代器). 该方法返回一个[迭代器](/foundation/container/#迭代器), 然后for循环就会不断调用该迭代对象的`__next__()`方法拿到下一个值, 知道遇到`StopIteration`错误退出循环.
 
 ???+ example "例子"
 

@@ -115,7 +115,7 @@ comments: false
 
 ???+ warning "注意"
 
-    这种函数是"不应该"被直接引用, 而不是"不能"被直接引用, 这是一种约定俗称的方法, 告诉开发者这个函数不能引用. 在实例变量/函数的[访问限制](/基础/对象/#访问限制)也提到过这个概念. 
+    这种函数是"不应该"被直接引用, 而不是"不能"被直接引用, 这是一种约定俗称的方法, 告诉开发者这个函数不能引用. 在实例变量/函数的[访问限制](/foundation/object/#访问限制)也提到过这个概念. 
 
 ### 包
 
@@ -202,8 +202,8 @@ comments: false
     - `import [module] as [alias]`
 - `import [package].[module]`
     - `import [package].[module] as [alias]`
-- `import [package]`: 详见[导入包](#init.py是一个模块)
-- `import [package].[subpackage]`: 详见[导入包](#init.py是一个模块)
+- `import [package]`: 详见[导入包](#init.py是一个module)
+- `import [package].[subpackage]`: 详见[导入包](#init.py是一个module)
 
     ???+ warning "注意"
 
