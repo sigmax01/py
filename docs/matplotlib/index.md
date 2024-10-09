@@ -1,6 +1,5 @@
 ---
 title: 绪论
-icon: material/airballoon
 comments: false
 ---
 
