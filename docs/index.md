@@ -2,6 +2,12 @@
 
 欢迎来到Python笔记项目.
 
+## 联动
+
+- [基石库](https://gk.ricolxwz.de)
+- [机器学习](https://ml.ricolxwz.de)
+- [杂七杂八档案室](https://misc.ricolxwz.de)
+
 ## 进度
 
 - [x] [基础](/foundation/)
