@@ -5,7 +5,7 @@ function umami() {
     script.src = "https://umami.ricolxwz.io/script.js";
     script.setAttribute(
       "data-website-id",
-      "74101f67-1f26-4304-9dbe-2cdce6835eda"
+      "a918fbbd-f71b-49a6-8e66-3caddd16f722"
     );
     document.head.appendChild(script);
   }
