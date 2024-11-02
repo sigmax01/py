@@ -83,6 +83,9 @@ extra:
     - icon: fontawesome/at-solid
       link: mailto:ricol.xwz@outlook.com
   generator: false
+  analytics:
+    provider: google
+    property: G-JMVQ0KN6WN
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
