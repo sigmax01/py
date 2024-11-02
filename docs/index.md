@@ -8,6 +8,10 @@
 - [机器学习](https://ml.ricolxwz.de)
 - [杂七杂八档案室](https://misc.ricolxwz.de)
 
+## 赞助
+
+<a href="https://www.buymeacoffee.com/ricolxwz"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=ricolxwz&button_colour=00e676&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
 ## 进度
 
 - [x] [基础](/foundation/)
