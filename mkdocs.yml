@@ -33,6 +33,7 @@ theme:
     - search.highlight
     - search.share
     - navigation.tracking
+    - announce.dismiss
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
