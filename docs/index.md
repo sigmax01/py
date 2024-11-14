@@ -6,6 +6,7 @@
 
 - [基石库](https://gk.ricolxwz.de)
 - [机器蝉](https://ml.ricolxwz.de)
+- [无底洞](https://cpp.ricolxwz.de)
 - [杂七杂八档案室](https://misc.ricolxwz.de)
 
 ## 进度
