@@ -80,3 +80,41 @@ comments: false
 ## Class Inheritance
 
 由于子类的构造函数会覆盖掉父类的构造函数, 可以通过`super().__init__(<attr>, ...)`来引入其父类的构造函数, 然后在这个基础上增加新的功能. 同样的, 也可以在子类的任意函数中通过`super()`调用父类的任意函数, 注意, 和其他方法不同的是, 不用传入`self`.
+
+## Shell Script
+
+- `echo`: 用来输出文字
+- `#!/bin/bash`: 指定shell为bash shell
+- `touch`: 用于创建文件
+- `>`: 重定向符
+- `cat`: 打印文件内容
+
+## Dict&Set Comprehension
+
+写法和list comprehension差不多. 
+
+???+ example "例子"
+
+    ```py
+    nums = [1, 2, 3, 4, 5]
+    squares = {num: num**2 for num in nums}
+    ```
+
+    ```py
+    nums = [1, 2, 3, 4, 5]
+    squares = {num: num**2 for num in nums if num % 2 == 0}
+    ```
+
+    ```py
+    keys = ['a', 'b', 'c']
+    values = [1, 2, 3]
+    dict = {key: value for key, value in zip(keys, values)}
+    ```
+
+    ```py
+    squares = {x**2 for x in range(1, 6)}
+    ```
+
+    ```py
+    events = {x for x in range(1, 11) if x % 2 == 0}
+    ```
