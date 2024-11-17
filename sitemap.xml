@@ -113,6 +113,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/encoding/"/>
     </url>
     <url>
+        <loc>https://py.ricolxwz.de/foundation/exam/</loc>
+        <lastmod>2024-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/exam/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/exam/"/>
+    </url>
+    <url>
         <loc>https://py.ricolxwz.de/foundation/function/</loc>
         <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
@@ -412,6 +419,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/encoding/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/encoding/"/>
+    </url>
+    <url>
+        <loc>https://py.ricolxwz.de/en/foundation/exam/</loc>
+        <lastmod>2024-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/exam/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/exam/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/function/</loc>
