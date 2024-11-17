@@ -114,6 +114,19 @@ Ashlee Pearson, ashlee.pearson@sydney.edu.au.
 - 参加每日的Drop-in
 - 发布问题/想法到Ed Discussion
 
+### 考试
+
+考察的内容:
+
+- Arrays and Numpy
+- Shell script introduction
+- Generators
+- Decorators
+- If expressions
+- Regular expressions
+- Shell programming
+- Class features: special methods, inheritance, variables
+
 ### 备注
 
 - 新的课程设计模式: 先介绍所有简单的主题, 然后再介绍较难的主题
