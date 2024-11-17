@@ -127,6 +127,8 @@ Ashlee Pearson, ashlee.pearson@sydney.edu.au.
 - Shell programming
 - Class features: special methods, inheritance, variables
 
+[考点总结](/foundation/exam).
+
 ### 备注
 
 - 新的课程设计模式: 先介绍所有简单的主题, 然后再介绍较难的主题
