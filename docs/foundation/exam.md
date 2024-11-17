@@ -118,3 +118,7 @@ comments: false
     ```py
     events = {x for x in range(1, 11) if x % 2 == 0}
     ```
+
+## If Statement
+
+什么, If statement居然放在Advanced???? 课题组在想什么??? 幼儿园也会写这个啊?
