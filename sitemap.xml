@@ -2,602 +2,602 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://py.ricolxwz.de/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/argparse/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/argparse/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/argparse/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/base64/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/base64/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/base64/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/collections/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/collections/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/collections/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/contextlib/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/contextlib/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/contextlib/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/datetime/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/datetime/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/datetime/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/hashlib/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/hashlib/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/hashlib/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/hmac/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/hmac/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/hmac/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/itertools/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/itertools/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/itertools/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/basic-package/requests/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/requests/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/requests/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/async/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/async/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/async/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/container/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/container/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/container/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/database/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/database/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/database/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/debug/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/debug/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/debug/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/encoding/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/encoding/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/encoding/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/function/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/function/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/function/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/io/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/io/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/io/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/misc/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/misc/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/misc/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/module/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/module/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/module/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/network/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/network/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/network/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/object/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/object/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/object/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/pvm/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/pvm/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/pvm/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/foundation/threading/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/threading/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/threading/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/matplotlib/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/matplotlib/column-chart/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/column-chart/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/column-chart/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/matplotlib/foundation/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/foundation/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/foundation/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/matplotlib/heat-map/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/heat-map/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/heat-map/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/matplotlib/histogram/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/histogram/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/histogram/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/matplotlib/pie-chart/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/pie-chart/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/pie-chart/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/matplotlib/scatter-chart/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/scatter-chart/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/scatter-chart/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/numpy/array-creation/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/array-creation/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/array-creation/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/numpy/array-index/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/array-index/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/array-index/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/numpy/broadcast/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/broadcast/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/broadcast/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/numpy/datatype/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/datatype/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/datatype/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/numpy/io/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/io/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/io/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/numpy/structured-array/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/structured-array/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/structured-array/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/numpy/view-copy/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/view-copy/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/view-copy/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/pandas/data-index/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/pandas/data-index/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/pandas/data-index/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/pandas/foundation/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/pandas/foundation/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/pandas/foundation/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/pandas/grouping/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/pandas/grouping/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/pandas/grouping/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/pandas/preliminary-knowledge/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/pandas/preliminary-knowledge/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/pandas/preliminary-knowledge/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/seaborn/introduction/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/seaborn/introduction/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/seaborn/introduction/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/argparse/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/argparse/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/argparse/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/base64/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/base64/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/base64/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/collections/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/collections/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/collections/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/contextlib/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/contextlib/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/contextlib/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/datetime/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/datetime/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/datetime/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/hashlib/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/hashlib/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/hashlib/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/hmac/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/hmac/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/hmac/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/itertools/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/itertools/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/itertools/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/basic-package/requests/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/basic-package/requests/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/basic-package/requests/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/async/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/async/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/async/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/container/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/container/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/container/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/database/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/database/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/database/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/debug/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/debug/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/debug/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/encoding/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/encoding/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/encoding/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/function/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/function/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/function/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/io/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/io/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/io/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/misc/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/misc/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/misc/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/module/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/module/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/module/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/network/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/network/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/network/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/object/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/object/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/object/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/pvm/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/pvm/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/pvm/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/foundation/threading/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/foundation/threading/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/foundation/threading/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/matplotlib/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/matplotlib/column-chart/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/column-chart/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/column-chart/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/matplotlib/foundation/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/foundation/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/foundation/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/matplotlib/heat-map/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/heat-map/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/heat-map/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/matplotlib/histogram/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/histogram/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/histogram/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/matplotlib/pie-chart/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/pie-chart/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/pie-chart/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/matplotlib/scatter-chart/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/matplotlib/scatter-chart/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/matplotlib/scatter-chart/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/numpy/array-creation/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/array-creation/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/array-creation/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/numpy/array-index/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/array-index/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/array-index/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/numpy/broadcast/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/broadcast/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/broadcast/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/numpy/datatype/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/datatype/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/datatype/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/numpy/io/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/io/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/io/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/numpy/structured-array/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/structured-array/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/structured-array/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/numpy/view-copy/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/numpy/view-copy/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/numpy/view-copy/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/pandas/data-index/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/pandas/data-index/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/pandas/data-index/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/pandas/foundation/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/pandas/foundation/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/pandas/foundation/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/pandas/grouping/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/pandas/grouping/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/pandas/grouping/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/pandas/preliminary-knowledge/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/pandas/preliminary-knowledge/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/pandas/preliminary-knowledge/"/>
     </url>
     <url>
         <loc>https://py.ricolxwz.de/en/seaborn/introduction/</loc>
-        <lastmod>2024-11-14</lastmod>
+        <lastmod>2024-11-17</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://py.ricolxwz.de/en/seaborn/introduction/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://py.ricolxwz.de/seaborn/introduction/"/>
