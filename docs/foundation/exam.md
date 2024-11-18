@@ -297,6 +297,42 @@ comments: false
     next(odd()) # 输出step1 1
     ```
 
+???+ example "例子"
+
+    ```py
+    def square_numbers(n):
+        """
+        Generator function to yield square of numbers from 1 to n.
+        
+        :param n: The maximum number to generate squares for.
+        """
+        for i in range(1, n+1):
+            yield i ** 2
+
+    # Example usage
+    for square in square_numbers(5):
+        # Print each square as it is generated
+        print(square)
+    ```
+
+    ```py
+    # Task 3: Even Number Generator.
+    even_gen = (x for x in range(1, 101) if x % 2 == 0)
+
+    # Example usage: Iterating through the generator and printing each even number.
+    for even in even_gen:
+        print(even)
+    ```
+
 ## If Statement
 
 什么, If statement居然放在Advanced???? 课题组在想什么??? 幼儿园也会写这个啊?
+
+## Lambda函数
+
+???+ example "例子"
+
+    ```py
+    f = lambda x: x * x
+    f(5) # 输出25
+    ```
