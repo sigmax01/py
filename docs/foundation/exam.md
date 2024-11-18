@@ -119,6 +119,184 @@ comments: false
     events = {x for x in range(1, 11) if x % 2 == 0}
     ```
 
+## Decorator
+
+注意有两种写法:
+
+???+ example "例子"
+
+    1. 不带有参数的装饰器
+
+        ```py
+        def log(func):
+            def wrapper(t):
+                print("currently printing the log...")
+                result = func(t)
+                print("finished...")
+                return result
+            return wrapper
+
+        @log
+        def now(text):
+            print(text)
+            return 0
+        ```
+
+    2. 带有参数的装饰器
+
+        ```py
+        def log(param):
+            def decorator(func):
+                def wrapper(t):
+                    print("currently printing the log...")
+                    print(param)
+                    result = func(t)
+                    return result
+                return wrapper
+            return decorator
+
+        @log("Hello?")
+        def now(text):
+            print(text)
+            return 0
+        ```
+
+???+ example "例子"
+
+    ```py
+    ###### TASK 3 ######
+    import time
+
+    # Define the decorator
+    def measure_time(func):
+        def wrapper(n):
+            start = time.time()
+            result = func(n)
+            end = time.time()
+            execution_time = end - start
+            print(f"Time taken to execute: {execution_time} seconds")
+            return result
+        return wrapper
+
+    # Apply the decorator to a function
+    @measure_time
+    def factorial_iterative(n):
+        result = 1
+        for i in range(2, n+1):
+            result *= i
+        return result
+
+    # Call the function
+    print(factorial_iterative(25))  # Output: 15511210043330985984000000
+    #Expected output
+    '''
+    Time taken to execute: <time> seconds
+    15511210043330985984000000
+    '''
+    ```
+
+    ```py
+    ###### TASK 1 ######
+
+    # Define the decorator
+    def log_execution(func):
+        def wrapper():
+            print("Executing function...")
+            func()
+            print("Function executed!")
+        return wrapper
+
+    # Apply the decorator to a function
+    @log_execution
+    def greet():
+        print("Hello, welcome!")
+
+    # Call the function
+    greet()
+    #Expected Output
+    '''Executing function...
+    Hello, welcome!
+    Function executed!'''
+    ```
+
+    ```py
+    ###### TASK 2 ######
+
+    # Define the decorator
+    def validate_args(func):
+        def wrapper(x, y):
+            try:
+                result = func(x, y)
+                return result
+            except:
+                print("Invalid argument!")
+                return None
+            
+        return wrapper
+
+    # Apply the decorator to a function
+    @validate_args
+    def add(x, y):
+        return x + y
+
+        
+    # Call the function with valid arguments
+    print(add(2, 3))  # Output: 5
+
+    # Call the function with an invalid argument
+    print(add(2, "three"))  # Output: Invalid argument!
+
+    #Expected Output
+    '''
+    5
+    Invalid argument!
+    None
+    '''
+    ```
+
+## Generator
+
+如果列表元素可以在循环的过程中不断算出后面的元素, 那么就不必创造出完整的列表, 节省大量空间. 在Python中, 这种边循环边计算的机制, 叫做生成器.
+
+有两种方式创建生成器: 第一种和list comprehension类似, 只不过用的是`()`; 第二种是生成器函数, 它在每次调用`next()`的时候执行, 在函数内遇到`yield`语句执行并中断, 再次执行的时候从上次返回的`yield`语句的下一句开始执行.
+
+???+ example "例子"
+
+    ```py
+    g = (x * x for x in range(10))
+    ```
+ 
+    ```py
+    def odd():
+        print("step 1")
+        yield 1
+        print("step 2")
+        yield 3
+        print("step 3")
+        yield 5
+
+    o = odd()
+    next(o) # 输出step 1, 1
+    next(o) # 输出step 2, 3
+    next(o) # 输出step 3, 5
+    ```
+
+    需要注意的是, 调用生成器函数会创建一个生成器对象, 如上面的`o = odd()`. 多次调用生成器函数会创建多个相互独立的生成器对象.
+
+    ```py
+    def odd():
+        print("step 1")
+        yield 1
+        print("step 2")
+        yield 3
+        print("step 3")
+        yield 5
+
+    next(odd()) # 输出step1 1
+    next(odd()) # 输出step1 1
+    next(odd()) # 输出step1 1
+    ```
+
 ## If Statement
 
 什么, If statement居然放在Advanced???? 课题组在想什么??? 幼儿园也会写这个啊?
