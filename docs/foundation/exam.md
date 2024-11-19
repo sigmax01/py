@@ -328,11 +328,74 @@ comments: false
 
 什么, If statement居然放在Advanced???? 课题组在想什么??? 幼儿园也会写这个啊?
 
-## Lambda函数
+## Lambda Function
 
 ???+ example "例子"
 
     ```py
     f = lambda x: x * x
     f(5) # 输出25
+    ```
+
+## Regular Expressions
+
+需要先导入包`import re`.
+
+- `.`: 匹配任意单个字符, 可以用`\.`转义
+- `^`: 匹配字符串的开始
+- `$`: 匹配字符串的结束
+- `*`: 匹配前面的字符0次或者多次
+- `+`: 匹配前面的字符1次或者多次
+- `?`: 匹配前面的字符0次或者1次
+- `{n}`: 精确匹配前面的字符n次
+- `{n,}`: 至少匹配前面的字符n次
+- `{n,m}`: 匹配前面的字符n到m次
+- `[abc]`: 匹配字符a, b或c
+- `[a-z]`: 匹配所有小写字母
+- `[^abc]`: 匹配除a, b, c以外的所有字符
+- `\d`: 匹配任意数字, 等价于`[0-9]`
+- `\D`: 匹配任意非数字
+- `\w`: 匹配字母, 数字或下划线, 等价于`[a-zA-Z0-9_]`
+- `\W`: 匹配任意非字母, 数字或下划线
+- `\s`: 匹配空白字符(空格, 制表符等)
+- `\S`: 匹配非空白字符
+- `()`: 分组或者捕获
+- `(?P<<name>>)`: 命名组
+
+使用`re.search(<pattern>, <input>)`检查`input`是否match pattern. 如果match, 返回一个`re.Match`对象, 如果不match, 返回`None`.
+
+复合:
+
+- `.*`: 匹配任意长度的字符串
+
+???+ example "例子"
+
+    ```py
+    import re
+
+    with open("./files/python.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            if re.search(r".*[pP]ython.*", line):
+                print(line.replace("\n", ""))
+    ```
+
+    ```py
+    import re
+
+    with open("./files/dots.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            if re.search(r".*hello\.world.*", line):
+                print(line.replace("\n", ""))
+    ```
+
+    ```py
+    import re
+
+    with open("./files/done.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            if re.search(r"done$", line):
+                print(line.replace("\n", ""))
     ```
