@@ -373,29 +373,54 @@ comments: false
     ```py
     import re
 
+    # 匹配含有python或者Python的句子
     with open("./files/python.txt", "r") as f:
         lines = f.readlines()
         for line in lines:
-            if re.search(r".*[pP]ython.*", line):
+            if re.search(r".*[pP]ython.*", line.replace("\n", "")):
                 print(line.replace("\n", ""))
     ```
 
     ```py
     import re
 
+    # 匹配含有hello.world的句子
     with open("./files/dots.txt", "r") as f:
         lines = f.readlines()
         for line in lines:
-            if re.search(r".*hello\.world.*", line):
+            if re.search(r".*hello\.world.*", line.replace("\n", "")):
                 print(line.replace("\n", ""))
     ```
 
     ```py
     import re
 
+    # 匹配结尾为done的句子
     with open("./files/done.txt", "r") as f:
         lines = f.readlines()
         for line in lines:
-            if re.search(r"done$", line):
+            if re.search(r"done$", line.replace("\n", "")):
                 print(line.replace("\n", ""))
+    ```
+
+    ```py
+    import re
+
+    # 匹配含有非数字的句子
+    with open("./files/mix.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            if re.search(r".*\D.*", line.replace("\n", "")):
+                print(line.replace("\n", ""))
+    ```
+
+    ```py
+    import re
+
+    # 提取字母, 数字或者混合
+    with open("./files/alphanumeric.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            result = re.findall(r'[a-zA-Z0-9]+', line)
+            print(result)
     ```
