@@ -424,3 +424,23 @@ comments: false
             result = re.findall(r'[a-zA-Z0-9]+', line)
             print(result)
     ```
+
+    ```py
+    import re
+
+    # 使用组提取信息
+    def extract_info(filename):
+        pattern = r"^([A-Z]{1}[a-z]*).(\d{2}).*([A-Z]{1}[a-z]*)$"
+        with open(filename, 'r') as file:
+            for line in file:
+                match = re.search(pattern, line)
+                if match:
+                    # Group 1: Name, Group 2: Age, Group 3: Location
+                    name = match.group(1)
+                    age = match.group(2)
+                    location = match.group(3)
+                    print(f"Name: {name}, Age: {age}, Location: {location}")
+
+    # Call the function with the input file
+    extract_info('files/data.txt')
+    ```
