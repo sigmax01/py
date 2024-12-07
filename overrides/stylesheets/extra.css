@@ -99,6 +99,72 @@ background-color: var(--md-header-bg-color);
 font-size: 1em;
 }
 
+summary {
+    background-color: #ffffff00 !important;
+}
+
+details.note {
+    background: #448aff1a;
+}
+
+details.example {
+    background: #7c4dff1a;
+}
+
+details.tip {
+    background: #00bfa51a;
+}
+
+details.warning {
+    background: #00bfa51a;
+}
+
+details.abstract {
+    background: #00b0ff1a;
+}
+
+details.info {
+    background: #00b8d41a;
+}
+
+details.success {
+    background: #00c8531a;
+}
+
+details.question {
+    background: #64dd171a;
+}
+
+details.warning {
+    background: #ff91001a;
+}
+
+details.failure {
+    background: #ff52521a;
+}
+
+details.danger {
+    background: #ff17441a;
+}
+
+details.bug {
+    background: #f500571a;
+}
+
+details.quote {
+    background: #9e9e9e1a;
+}
+
+details {
+    border: unset !important;
+    box-shadow: unset !important;
+    border-radius: 0.5rem !important;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+}
+
 .md-typeset .admonition,
 .md-typeset details {
 border-width: 0;
