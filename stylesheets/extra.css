@@ -165,12 +165,6 @@ details {
     padding-right: 0.8rem !important;
 }
 
-.md-typeset .admonition,
-.md-typeset details {
-border-width: 0;
-border-left-width: 4px;
-}
-
 :root {
 --md-code-font: "mononoki", "HarmonyOS Sans SC";
 --md-text-font: "mononoki", "HarmonyOS Sans SC";
