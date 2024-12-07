@@ -90,8 +90,7 @@ background-color: var(--md-header-bg-color);
 .md-tabs {
 box-shadow: none;
 transition: none;
-backdrop-filter: saturate(180%) blur(20px);
--webkit-backdrop-filter: saturate(180%) blur(20px);
+backdrop-filter: blur(20px);
 background-color: var(--md-header-bg-color);
 }
 
