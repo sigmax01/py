@@ -8,7 +8,7 @@ copyright: <p xmlns:cc="http://creativecommons.org/ns#" >版权所有 &copy 2024
 site_description: An python study node
 theme:
   name: material
-  logo_light_mode: https://cdn.jsdelivr.net/gh/sigmax0124/logo@master/favion-big-mc-212121-000000-1.svg 
+  logo_light_mode: https://cdn.jsdelivr.net/gh/sigmax0124/logo@master/favion-big-mc-212121-000000-1.svg
   logo_dark_mode: https://cdn.jsdelivr.net/gh/sigmax0124/logo@master/favion-big-mc-000000-212121-1.svg
   language: zh
   custom_dir: overrides
@@ -51,7 +51,7 @@ theme:
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference 
+        name: Switch to system preference
   icon:
     annotation: material/star-four-points-circle
     repo: fontawesome/brands/github
@@ -67,7 +67,7 @@ theme:
     #   danger: octicons/zap-16
     #   bug: octicons/bug-16
     #   example: octicons/beaker-16
-    #   quote: octicons/quote-16 
+    #   quote: octicons/quote-16
 extra:
   social:
     - icon: fontawesome/mug-hot-solid
@@ -85,18 +85,18 @@ extra:
     - icon: fontawesome/at-solid
       link: mailto:ricol.xwz@outlook.com
   generator: false
-  # analytics:
-  #   provider: google
-  #   property: G-JMVQ0KN6WN
+  analytics:
+    provider: google
+    property: G-JMVQ0KN6WN
 extra_css:
-  - stylesheets/extra.css
+  - https://ml.ricolxwz.de/stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
 extra_javascript:
   - javascripts/favicon.js
   - javascripts/katex.js
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
-  - javascripts/analysis.js
+  # - javascripts/analysis.js
 markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
@@ -156,52 +156,52 @@ plugins:
       enabled: !ENV [CI, false]
 nav:
   - 开始:
-    - index.md
+      - index.md
   - 基础:
-    - foundation/index.md
-    - 容器: foundation/container.md
-    - 函数: foundation/function.md
-    - 对象: foundation/object.md
-    - 文件: foundation/io.md
-    - 模块/包/库: foundation/module.md
-    - 网络: foundation/network.md
-    - 多进程/多线程: foundation/threading.md
-    - 异步: foundation/async.md
-    - 数据库: foundation/database.md
-    - 错误/调试/测试: foundation/debug.md
-    - 编码: foundation/encoding.md
-    - PVM: foundation/pvm.md
-    - 其他: foundation/misc.md
+      - foundation/index.md
+      - 容器: foundation/container.md
+      - 函数: foundation/function.md
+      - 对象: foundation/object.md
+      - 文件: foundation/io.md
+      - 模块/包/库: foundation/module.md
+      - 网络: foundation/network.md
+      - 多进程/多线程: foundation/threading.md
+      - 异步: foundation/async.md
+      - 数据库: foundation/database.md
+      - 错误/调试/测试: foundation/debug.md
+      - 编码: foundation/encoding.md
+      - PVM: foundation/pvm.md
+      - 其他: foundation/misc.md
   - 常用:
-    - datetime: basic-package/datetime.md
-    - collections: basic-package/collections.md
-    - argparse: basic-package/argparse.md
-    - base64: basic-package/base64.md
-    - hashlib: basic-package/hashlib.md
-    - hmac: basic-package/hmac.md
-    - itertools: basic-package/itertools.md
-    - contextlib: basic-package/contextlib.md
-    - requests: basic-package/requests.md
+      - datetime: basic-package/datetime.md
+      - collections: basic-package/collections.md
+      - argparse: basic-package/argparse.md
+      - base64: basic-package/base64.md
+      - hashlib: basic-package/hashlib.md
+      - hmac: basic-package/hmac.md
+      - itertools: basic-package/itertools.md
+      - contextlib: basic-package/contextlib.md
+      - requests: basic-package/requests.md
   - NumPy:
-    - 数据类型: numpy/datatype.md
-    - 数组构建: numpy/array-creation.md
-    - 视图/副本: numpy/view-copy.md
-    - 数组广播: numpy/broadcast.md
-    - 结构化数组: numpy/structured-array.md
-    - 数组索引: numpy/array-index.md
-    - 文件存取: numpy/io.md
+      - 数据类型: numpy/datatype.md
+      - 数组构建: numpy/array-creation.md
+      - 视图/副本: numpy/view-copy.md
+      - 数组广播: numpy/broadcast.md
+      - 结构化数组: numpy/structured-array.md
+      - 数组索引: numpy/array-index.md
+      - 文件存取: numpy/io.md
   - Pandas:
-    - 预备知识: pandas/preliminary-knowledge.md
-    - 基础知识: pandas/foundation.md
-    - 数据索引: pandas/data-index.md
-    - 数据分组: pandas/grouping.md
+      - 预备知识: pandas/preliminary-knowledge.md
+      - 基础知识: pandas/foundation.md
+      - 数据索引: pandas/data-index.md
+      - 数据分组: pandas/grouping.md
   - Matplotlib:
-    - matplotlib/index.md
-    - 基础知识: matplotlib/foundation.md
-    - 散点图: matplotlib/scatter-chart.md
-    - 柱形图: matplotlib/column-chart.md
-    - 饼图: matplotlib/pie-chart.md
-    - 直方图: matplotlib/histogram.md
-    - 热力图: matplotlib/heat-map.md
+      - matplotlib/index.md
+      - 基础知识: matplotlib/foundation.md
+      - 散点图: matplotlib/scatter-chart.md
+      - 柱形图: matplotlib/column-chart.md
+      - 饼图: matplotlib/pie-chart.md
+      - 直方图: matplotlib/histogram.md
+      - 热力图: matplotlib/heat-map.md
   - Seaborn:
-    - 简要介绍: seaborn/introduction.md
+      - 简要介绍: seaborn/introduction.md
